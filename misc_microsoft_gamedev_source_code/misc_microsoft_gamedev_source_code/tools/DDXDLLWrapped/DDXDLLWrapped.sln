@@ -1,0 +1,102 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DDXDLLWrapped", "DDXDLLWrapped\DDXDLLWrapped.vcproj", "{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug (DLL)|Mixed Platforms = Debug (DLL)|Mixed Platforms
+		Debug (DLL)|Win32 = Debug (DLL)|Win32
+		Debug (DLL)|Xbox 360 = Debug (DLL)|Xbox 360
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Debug|Xbox 360 = Debug|Xbox 360
+		DebugDLL|Mixed Platforms = DebugDLL|Mixed Platforms
+		DebugDLL|Win32 = DebugDLL|Win32
+		DebugDLL|Xbox 360 = DebugDLL|Xbox 360
+		Final (DLL)|Mixed Platforms = Final (DLL)|Mixed Platforms
+		Final (DLL)|Win32 = Final (DLL)|Win32
+		Final (DLL)|Xbox 360 = Final (DLL)|Xbox 360
+		Final|Mixed Platforms = Final|Mixed Platforms
+		Final|Win32 = Final|Win32
+		Final|Xbox 360 = Final|Xbox 360
+		FinalDLL|Mixed Platforms = FinalDLL|Mixed Platforms
+		FinalDLL|Win32 = FinalDLL|Win32
+		FinalDLL|Xbox 360 = FinalDLL|Xbox 360
+		Playtest|Mixed Platforms = Playtest|Mixed Platforms
+		Playtest|Win32 = Playtest|Win32
+		Playtest|Xbox 360 = Playtest|Xbox 360
+		Profile|Mixed Platforms = Profile|Mixed Platforms
+		Profile|Win32 = Profile|Win32
+		Profile|Xbox 360 = Profile|Xbox 360
+		ProfileCallCap|Mixed Platforms = ProfileCallCap|Mixed Platforms
+		ProfileCallCap|Win32 = ProfileCallCap|Win32
+		ProfileCallCap|Xbox 360 = ProfileCallCap|Xbox 360
+		ProfileFastCap|Mixed Platforms = ProfileFastCap|Mixed Platforms
+		ProfileFastCap|Win32 = ProfileFastCap|Win32
+		ProfileFastCap|Xbox 360 = ProfileFastCap|Xbox 360
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.Debug (DLL)|Mixed Platforms.ActiveCfg = Debug|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.Debug (DLL)|Mixed Platforms.Build.0 = Debug|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.Debug (DLL)|Win32.ActiveCfg = Debug|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.Debug (DLL)|Win32.Build.0 = Debug|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.Debug (DLL)|Xbox 360.ActiveCfg = Debug|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.Debug|Win32.ActiveCfg = Debug|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.Debug|Win32.Build.0 = Debug|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.Debug|Xbox 360.ActiveCfg = Debug|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.DebugDLL|Mixed Platforms.ActiveCfg = Debug|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.DebugDLL|Mixed Platforms.Build.0 = Debug|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.DebugDLL|Win32.ActiveCfg = Debug|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.DebugDLL|Win32.Build.0 = Debug|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.DebugDLL|Xbox 360.ActiveCfg = Debug|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.Final (DLL)|Mixed Platforms.ActiveCfg = Release|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.Final (DLL)|Mixed Platforms.Build.0 = Release|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.Final (DLL)|Win32.ActiveCfg = Release|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.Final (DLL)|Win32.Build.0 = Release|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.Final (DLL)|Xbox 360.ActiveCfg = Release|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.Final|Mixed Platforms.ActiveCfg = Release|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.Final|Mixed Platforms.Build.0 = Release|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.Final|Win32.ActiveCfg = Release|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.Final|Win32.Build.0 = Release|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.Final|Xbox 360.ActiveCfg = Release|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.FinalDLL|Mixed Platforms.ActiveCfg = Release|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.FinalDLL|Mixed Platforms.Build.0 = Release|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.FinalDLL|Win32.ActiveCfg = Release|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.FinalDLL|Win32.Build.0 = Release|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.FinalDLL|Xbox 360.ActiveCfg = Release|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.Playtest|Mixed Platforms.ActiveCfg = Release|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.Playtest|Mixed Platforms.Build.0 = Release|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.Playtest|Win32.ActiveCfg = Release|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.Playtest|Win32.Build.0 = Release|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.Playtest|Xbox 360.ActiveCfg = Release|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.Profile|Mixed Platforms.ActiveCfg = Release|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.Profile|Mixed Platforms.Build.0 = Release|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.Profile|Win32.ActiveCfg = Release|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.Profile|Win32.Build.0 = Release|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.Profile|Xbox 360.ActiveCfg = Release|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.ProfileCallCap|Mixed Platforms.ActiveCfg = Release|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.ProfileCallCap|Mixed Platforms.Build.0 = Release|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.ProfileCallCap|Win32.ActiveCfg = Release|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.ProfileCallCap|Win32.Build.0 = Release|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.ProfileCallCap|Xbox 360.ActiveCfg = Release|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.ProfileFastCap|Mixed Platforms.ActiveCfg = Release|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.ProfileFastCap|Mixed Platforms.Build.0 = Release|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.ProfileFastCap|Win32.ActiveCfg = Release|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.ProfileFastCap|Win32.Build.0 = Release|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.ProfileFastCap|Xbox 360.ActiveCfg = Release|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.Release|Win32.ActiveCfg = Release|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.Release|Win32.Build.0 = Release|Win32
+		{331E3560-D70B-4BE9-ACE6-7F222BFF4A27}.Release|Xbox 360.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

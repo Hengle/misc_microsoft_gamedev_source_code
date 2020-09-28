@@ -1,0 +1,190 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DB92A7C0-AD20-4B8F-87A1-4F891EF697A5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Terrain</RootNamespace>
+    <AssemblyName>Terrain</AssemblyName>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.DirectX, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.DirectX.Direct3D, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.DirectX.Direct3DX, Version=1.0.2909.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.DirectX.DirectInput, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.Ink, Version=1.7.2600.2180, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Xceed.Compression, Version=2.3.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.FileSystem, Version=2.3.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.Zip, Version=2.3.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AmbientOcclusion.cs" />
+    <Compile Include="AmbientOcclusionDistributed.cs" />
+    <Compile Include="Controls\AOGenDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\AOGenDialog.Designer.cs">
+      <DependentUpon>AOGenDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editor\Brushes\BrushManager.cs" />
+    <Compile Include="Editor\Brushes\Camera.cs" />
+    <Compile Include="Editor\Brushes\Flight.cs" />
+    <Compile Include="Editor\Brushes\Foliage.cs" />
+    <Compile Include="Editor\Brushes\Sim.cs" />
+    <Compile Include="Editor\Brushes\Texturing_LayerEditor.cs" />
+    <Compile Include="Editor\CameraHeightRep.cs" />
+    <Compile Include="Editor\FoliageEditor.cs" />
+    <Compile Include="Editor\Masking.cs" />
+    <Compile Include="Editor\ClipArt.cs" />
+    <Compile Include="Editor\Editor.cs" />
+    <Compile Include="Editor\Brushes\Texturing.cs" />
+    <Compile Include="Editor\Brushes\Vertex.cs" />
+    <Compile Include="Editor\FiltersMain.cs" />
+    <Compile Include="Editor\Noise.cs" />
+    <Compile Include="Editor\RealLosRep.cs" />
+    <Compile Include="Editor\RoadEditor.cs" />
+    <Compile Include="Editor\TerrainWidgets.cs" />
+    <Compile Include="Editor\UndoManager.cs" />
+    <Compile Include="HeightsGen.cs" />
+    <Compile Include="RandomMap.cs" />
+    <Compile Include="Refinement.cs" />
+    <Compile Include="Render\TerrainMetrics.cs" />
+    <Compile Include="Render\TerrainQuadNode.cs" />
+    <Compile Include="Render\TerrainRender.cs" />
+    <Compile Include="Render\TerrainTexturing_Composite.cs" />
+    <Compile Include="Render\TerrainTexturing_Decals.cs" />
+    <Compile Include="Render\TerrainTexturing_LayerContainer.cs" />
+    <Compile Include="Render\TerrainVisualLOD.cs" />
+    <Compile Include="Sim\LightManager.cs" />
+    <Compile Include="Sim\TerrainFlightHeights.cs" />
+    <Compile Include="Sim\TerrainSimRep.cs" />
+    <Compile Include="Render\TerrainTexturing.cs" />
+    <Compile Include="Render\TerrainVisual.cs" />
+    <Compile Include="Sim\TerrainSimRepHeights.cs" />
+    <Compile Include="Sim\TerrainSimTileData.cs" />
+    <Compile Include="TabletSupport.cs" />
+    <Compile Include="TED\TEDIO.cs" />
+    <Compile Include="TED\TEDIO_Older.cs" />
+    <Compile Include="Terrain.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TerrainGlobals.cs" />
+    <Compile Include="TerrainMain.cs" />
+    <Compile Include="Utils.cs" />
+    <Compile Include="XTD Export\DEP.cs" />
+    <Compile Include="XTD Export\ECF.cs" />
+    <Compile Include="XTD Export\ExportMemoryEstimate.cs" />
+    <Compile Include="XTD Export\ExportProgressDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XTD Export\ExportProgressDialog.Designer.cs">
+      <DependentUpon>ExportProgressDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XTD Export\ExportRenderTerrain.cs" />
+    <Compile Include="XTD Export\ExportTo360.cs" />
+    <Compile Include="XTD Export\ExportXSD.cs" />
+    <Compile Include="XTD Export\ExportXTH.cs" />
+    <Compile Include="XTD Export\ExportXTT.cs" />
+    <Compile Include="XTD Export\ExportXTD.cs" />
+    <Compile Include="XTD Export\TAG.cs" />
+    <Compile Include="XTD Export\XSD_NavMesh.cs" />
+    <Compile Include="XTD Export\XTD_Refine.cs" />
+    <Compile Include="XTD Export\XTD_Structs.cs" />
+    <Compile Include="XTD Export\XTT_FoliageExport.cs" />
+    <Compile Include="XTD Export\XTT_RoadExport.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EditorCore\EditorCore.csproj">
+      <Project>{D93EDAAC-3545-4224-A9EF-9A7426EE9E39}</Project>
+      <Name>EditorCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ModelSystem\ModelSystem.csproj">
+      <Project>{4DDEF9AB-DF2F-42CD-9D2B-BEE1824E8119}</Project>
+      <Name>ModelSystem</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Renderer\Renderer.csproj">
+      <Project>{16DF09C9-E688-44DC-94A6-0390289021D8}</Project>
+      <Name>Renderer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sim\Sim.csproj">
+      <Project>{F0F5933B-2FC5-40F5-9B9C-3DC332A954AD}</Project>
+      <Name>Sim</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\AOGenDialog.resx">
+      <DependentUpon>AOGenDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XTD Export\ExportProgressDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExportProgressDialog.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

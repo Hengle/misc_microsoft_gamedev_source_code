@@ -1,0 +1,296 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{70138E95-F325-48E6-AA96-30B757C6532B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RemoteMemory</RootNamespace>
+    <AssemblyName>RemoteMemory</AssemblyName>
+    <ApplicationIcon>resource\Hypnotoad.ico</ApplicationIcon>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="controls\FastBitmap.cs" />
+    <Compile Include="Data Filters\ErrorList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Data Filters\ErrorList.Designer.cs">
+      <DependentUpon>ErrorList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data Filters\LineCallstacksView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data Filters\LineCallstacksView.Designer.cs">
+      <DependentUpon>LineCallstacksView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data Filters\LoadingSymbolsWait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data Filters\LoadingSymbolsWait.Designer.cs">
+      <DependentUpon>LoadingSymbolsWait.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data Filters\LoadOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Data Filters\LoadOptions.Designer.cs">
+      <DependentUpon>LoadOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data Filters\openFileOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data Filters\openFileOptions.Designer.cs">
+      <DependentUpon>openFileOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="controls\fastTimeline.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controls\fastTimeline.Designer.cs">
+      <DependentUpon>fastTimeline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data Filters\Views\FileGroupingElement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Data Filters\Views\FileGroupingElement.Designer.cs">
+      <DependentUpon>FileGroupingElement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data Filters\Views\FileGroupings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Data Filters\Views\FileGroupings.Designer.cs">
+      <DependentUpon>FileGroupings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data Filters\Views\FileTimelineElement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Data Filters\Views\FileTimelineElement.Designer.cs">
+      <DependentUpon>FileTimelineElement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data Filters\Views\FileTimelines.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Data Filters\Views\FileTimelines.Designer.cs">
+      <DependentUpon>FileTimelines.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data Filters\Views\HeapFileView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Data Filters\Views\HeapFileView.Designer.cs">
+      <DependentUpon>HeapFileView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data Filters\xboxConnectOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data Filters\xboxConnectOptions.Designer.cs">
+      <DependentUpon>xboxConnectOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalErrors.cs" />
+    <Compile Include="GlobalSettings.cs" />
+    <Compile Include="Data Filters\GDIStatic.cs" />
+    <Compile Include="Data Filters\MemViewLarge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data Filters\MemViewLarge.Designer.cs">
+      <DependentUpon>MemViewLarge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data Filters\Views\HeapKey.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Data Filters\Views\HeapKey.Designer.cs">
+      <DependentUpon>HeapKey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data Filters\Views\HeapLines.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Data Filters\Views\HeapLines.Designer.cs">
+      <DependentUpon>HeapLines.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data Filters\Views\TopAllocators.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Data Filters\Views\TopAllocators.Designer.cs">
+      <DependentUpon>TopAllocators.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HW memory\AllocStats\AllocStats.cs" />
+    <Compile Include="HW memory\AllocStats\BlockAlloc.cs" />
+    <Compile Include="HW memory\AllocStats\FileAlloc.cs" />
+    <Compile Include="HW memory\AllocStats\HeapAlloc.cs" />
+    <Compile Include="HW memory\AllocStats\LineAlloc.cs" />
+    <Compile Include="HW memory\DbgHelp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HW memory\HaloWarsMem.cs" />
+    <Compile Include="Data Filters\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data Filters\MainForm.designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HW memory\StreamProcessing\AllocLogStream.cs" />
+    <Compile Include="HW memory\StreamProcessing\ProcessBinaryStream.cs" />
+    <Compile Include="HW memory\StreamProcessing\ProcessNetworkStream.cs" />
+    <Compile Include="HW memory\SymbolInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MemoryNumber.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Data Filters\ErrorList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ErrorList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data Filters\LineCallstacksView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LineCallstacksView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data Filters\LoadingSymbolsWait.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LoadingSymbolsWait.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data Filters\LoadOptions.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LoadOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data Filters\MemViewLarge.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MemViewLarge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data Filters\openFileOptions.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>openFileOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controls\fastTimeline.resx">
+      <DependentUpon>fastTimeline.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data Filters\Views\FileGroupingElement.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FileGroupingElement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data Filters\Views\FileGroupings.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FileGroupings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data Filters\Views\FileTimelineElement.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FileTimelineElement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data Filters\Views\FileTimelines.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FileTimelines.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data Filters\Views\HeapFileView.resx">
+      <DependentUpon>HeapFileView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data Filters\Views\HeapKey.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HeapKey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data Filters\Views\HeapLines.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HeapLines.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data Filters\Views\TopAllocators.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TopAllocators.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data Filters\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data Filters\xboxConnectOptions.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>xboxConnectOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="tcpServerConnection.cs" />
+    <Compile Include="ThreadSafeCallbackList.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GDIControls\GDIControls.csproj">
+      <Project>{3A970773-11C5-4320-9B1B-EAC33FD85E9B}</Project>
+      <Name>GDIControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="WinFormsUI\WinFormsUI.csproj">
+      <Project>{C75532C4-765B-418E-B09B-46D36B2ABDB1}</Project>
+      <Name>WinFormsUI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\xbox360_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\MenuFileSaveAsIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\MenuFileSaveIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\ImageFromDiskIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\Error.bmp" />
+    <None Include="resource\Warning.bmp" />
+    <None Include="resource\stop.png" />
+    <None Include="resource\screenshot.png" />
+    <None Include="resource\Hypnotoad.ico" />
+    <None Include="resource\up.png" />
+    <None Include="resource\down.png" />
+    <None Include="resource\loadlistIcon.png" />
+    <None Include="resource\clipboardIcon.png" />
+    <None Include="resource\addIcon.png" />
+    <None Include="resource\savelistIcon.png" />
+    <Content Include="TODO.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

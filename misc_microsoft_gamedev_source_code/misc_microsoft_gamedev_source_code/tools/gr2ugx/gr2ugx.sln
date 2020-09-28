@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gr2ugx", "gr2ugx.vcproj", "{E08F6687-DD81-4E8C-80C5-1C694B24069F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FC19316B-CBC6-4396-8B57-7651E617A369} = {FC19316B-CBC6-4396-8B57-7651E617A369}
+		{1DB1EFE1-66B7-4276-B383-43CFA121E5A2} = {1DB1EFE1-66B7-4276-B383-43CFA121E5A2}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xcore", "..\..\xcore\xcore.vcproj", "{FC19316B-CBC6-4396-8B57-7651E617A369}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xgeom", "..\..\xgeom\xgeom.vcproj", "{1DB1EFE1-66B7-4276-B383-43CFA121E5A2}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 3
+		SccProjectUniqueName0 = gr2ugx.vcproj
+		SccProjectName0 = Perforce\u0020Project
+		SccLocalPath0 = ..\\..
+		SccProvider0 = MSSCCI:Perforce\u0020SCM
+		SccProjectFilePathRelativizedFromConnection0 = tools\\gr2ugx\\
+		SccProjectUniqueName1 = ..\\..\\xcore\\xcore.vcproj
+		SccProjectName1 = Perforce\u0020Project
+		SccLocalPath1 = ..\\..
+		SccProvider1 = MSSCCI:Perforce\u0020SCM
+		SccProjectFilePathRelativizedFromConnection1 = xcore\\
+		SccProjectUniqueName2 = ..\\..\\xgeom\\xgeom.vcproj
+		SccProjectName2 = Perforce\u0020Project
+		SccLocalPath2 = ..\\..
+		SccProvider2 = MSSCCI:Perforce\u0020SCM
+		SccProjectFilePathRelativizedFromConnection2 = xgeom\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|Xbox 360 = Debug|Xbox 360
+		Final|Win32 = Final|Win32
+		Final|Xbox 360 = Final|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E08F6687-DD81-4E8C-80C5-1C694B24069F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E08F6687-DD81-4E8C-80C5-1C694B24069F}.Debug|Win32.Build.0 = Debug|Win32
+		{E08F6687-DD81-4E8C-80C5-1C694B24069F}.Debug|Xbox 360.ActiveCfg = Debug|Win32
+		{E08F6687-DD81-4E8C-80C5-1C694B24069F}.Final|Win32.ActiveCfg = Final|Win32
+		{E08F6687-DD81-4E8C-80C5-1C694B24069F}.Final|Win32.Build.0 = Final|Win32
+		{E08F6687-DD81-4E8C-80C5-1C694B24069F}.Final|Xbox 360.ActiveCfg = Final|Win32
+		{FC19316B-CBC6-4396-8B57-7651E617A369}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FC19316B-CBC6-4396-8B57-7651E617A369}.Debug|Win32.Build.0 = Debug|Win32
+		{FC19316B-CBC6-4396-8B57-7651E617A369}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{FC19316B-CBC6-4396-8B57-7651E617A369}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{FC19316B-CBC6-4396-8B57-7651E617A369}.Final|Win32.ActiveCfg = Final|Win32
+		{FC19316B-CBC6-4396-8B57-7651E617A369}.Final|Win32.Build.0 = Final|Win32
+		{FC19316B-CBC6-4396-8B57-7651E617A369}.Final|Xbox 360.ActiveCfg = Final|Xbox 360
+		{FC19316B-CBC6-4396-8B57-7651E617A369}.Final|Xbox 360.Build.0 = Final|Xbox 360
+		{1DB1EFE1-66B7-4276-B383-43CFA121E5A2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1DB1EFE1-66B7-4276-B383-43CFA121E5A2}.Debug|Win32.Build.0 = Debug|Win32
+		{1DB1EFE1-66B7-4276-B383-43CFA121E5A2}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{1DB1EFE1-66B7-4276-B383-43CFA121E5A2}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{1DB1EFE1-66B7-4276-B383-43CFA121E5A2}.Final|Win32.ActiveCfg = Final|Win32
+		{1DB1EFE1-66B7-4276-B383-43CFA121E5A2}.Final|Win32.Build.0 = Final|Win32
+		{1DB1EFE1-66B7-4276-B383-43CFA121E5A2}.Final|Xbox 360.ActiveCfg = Final|Xbox 360
+		{1DB1EFE1-66B7-4276-B383-43CFA121E5A2}.Final|Xbox 360.Build.0 = Final|Xbox 360
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,274 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TriangleHLSL", "TriangleHLSL.vcproj", "{652C7D60-BC02-4E09-96DD-930012345678}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5170BC4F-CC1D-4BBC-AF0A-4489B87891E9} = {5170BC4F-CC1D-4BBC-AF0A-4489B87891E9}
+		{47117851-E570-47A2-9E2C-4B0F0E91AC13} = {47117851-E570-47A2-9E2C-4B0F0E91AC13}
+		{1E6CB453-DFFD-4E64-B95F-63641B7D8971} = {1E6CB453-DFFD-4E64-B95F-63641B7D8971}
+		{3B96AA5E-E639-4251-B8CC-59D79DFA14CB} = {3B96AA5E-E639-4251-B8CC-59D79DFA14CB}
+		{6D065C60-FB33-4657-9C09-E26C8DC9F695} = {6D065C60-FB33-4657-9C09-E26C8DC9F695}
+		{EE08B261-74CD-44A9-BC15-B26689FCD9A0} = {EE08B261-74CD-44A9-BC15-B26689FCD9A0}
+		{FC19316B-CBC6-4396-8B57-7651E617A369} = {FC19316B-CBC6-4396-8B57-7651E617A369}
+		{CC1BB2A0-F8FD-4A35-90DF-D34DD605B9DE} = {CC1BB2A0-F8FD-4A35-90DF-D34DD605B9DE}
+		{EE5C20A7-B3F6-4E2C-9667-0CD5C035732A} = {EE5C20A7-B3F6-4E2C-9667-0CD5C035732A}
+		{010B79A9-A4DE-454D-8C66-B6CC4D0539A2} = {010B79A9-A4DE-454D-8C66-B6CC4D0539A2}
+		{33F038AF-FAFE-4FF6-B185-C6E4E215D8B9} = {33F038AF-FAFE-4FF6-B185-C6E4E215D8B9}
+		{18B091CA-B6B8-453C-A2BA-30F348753FD1} = {18B091CA-B6B8-453C-A2BA-30F348753FD1}
+		{1DB1EFE1-66B7-4276-B383-43CFA121E5A2} = {1DB1EFE1-66B7-4276-B383-43CFA121E5A2}
+		{D35114E9-75CE-4DCA-8667-55FFE8887306} = {D35114E9-75CE-4DCA-8667-55FFE8887306}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xcore", "..\..\xcore\xcore.vcproj", "{FC19316B-CBC6-4396-8B57-7651E617A369}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xgeom", "..\..\xgeom\xgeom.vcproj", "{1DB1EFE1-66B7-4276-B383-43CFA121E5A2}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xrender", "..\..\xrender\xrender.vcproj", "{33F038AF-FAFE-4FF6-B185-C6E4E215D8B9}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "compression", "..\..\compression\compression.vcproj", "{1E6CB453-DFFD-4E64-B95F-63641B7D8971}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ddx", "..\..\ddx\ddx.vcproj", "{EE08B261-74CD-44A9-BC15-B26689FCD9A0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1E6CB453-DFFD-4E64-B95F-63641B7D8971} = {1E6CB453-DFFD-4E64-B95F-63641B7D8971}
+		{FC19316B-CBC6-4396-8B57-7651E617A369} = {FC19316B-CBC6-4396-8B57-7651E617A369}
+		{D35114E9-75CE-4DCA-8667-55FFE8887306} = {D35114E9-75CE-4DCA-8667-55FFE8887306}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ximage", "..\..\ximage\ximage.vcproj", "{D35114E9-75CE-4DCA-8667-55FFE8887306}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xsystem", "..\..\xsystem\xsystem.vcproj", "{5170BC4F-CC1D-4BBC-AF0A-4489B87891E9}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xgameRender", "..\..\xgamerender\xgameRender.vcproj", "{CC1BB2A0-F8FD-4A35-90DF-D34DD605B9DE}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xvisual", "..\..\xvisual\xvisual.vcproj", "{010B79A9-A4DE-454D-8C66-B6CC4D0539A2}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xgranny", "..\..\xgranny\xgranny.vcproj", "{6D065C60-FB33-4657-9C09-E26C8DC9F695}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xinputsystem", "..\..\xinputsystem\xinputsystem.vcproj", "{3B96AA5E-E639-4251-B8CC-59D79DFA14CB}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xparticles", "..\..\xparticles\xparticles.vcproj", "{18B091CA-B6B8-453C-A2BA-30F348753FD1}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XScript", "..\..\xscript\XScript.vcproj", "{EE5C20A7-B3F6-4E2C-9667-0CD5C035732A}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "terrain", "..\..\terrain\terrain.vcproj", "{47117851-E570-47A2-9E2C-4B0F0E91AC13}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug Xenon = Debug Xenon
+		Final Xenon = Final Xenon
+		Playtest Xenon = Playtest Xenon
+		Profile Xenon = Profile Xenon
+		ProfileCallCap Xenon = ProfileCallCap Xenon
+		ProfileFastCap Xenon = ProfileFastCap Xenon
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{652C7D60-BC02-4E09-96DD-930012345678}.Debug Xenon.ActiveCfg = Debug|Xenon
+		{652C7D60-BC02-4E09-96DD-930012345678}.Debug Xenon.Build.0 = Debug|Xenon
+		{652C7D60-BC02-4E09-96DD-930012345678}.Final Xenon.ActiveCfg = Final|Xenon
+		{652C7D60-BC02-4E09-96DD-930012345678}.Final Xenon.Build.0 = Final|Xenon
+		{652C7D60-BC02-4E09-96DD-930012345678}.Playtest Xenon.ActiveCfg = Playtest|Xenon
+		{652C7D60-BC02-4E09-96DD-930012345678}.Playtest Xenon.Build.0 = Playtest|Xenon
+		{652C7D60-BC02-4E09-96DD-930012345678}.Profile Xenon.ActiveCfg = Final|Xenon
+		{652C7D60-BC02-4E09-96DD-930012345678}.Profile Xenon.Build.0 = Final|Xenon
+		{652C7D60-BC02-4E09-96DD-930012345678}.ProfileCallCap Xenon.ActiveCfg = Final|Xenon
+		{652C7D60-BC02-4E09-96DD-930012345678}.ProfileCallCap Xenon.Build.0 = Final|Xenon
+		{652C7D60-BC02-4E09-96DD-930012345678}.ProfileFastCap Xenon.ActiveCfg = Final|Xenon
+		{652C7D60-BC02-4E09-96DD-930012345678}.ProfileFastCap Xenon.Build.0 = Final|Xenon
+		{FC19316B-CBC6-4396-8B57-7651E617A369}.Debug Xenon.ActiveCfg = Debug|Xenon
+		{FC19316B-CBC6-4396-8B57-7651E617A369}.Debug Xenon.Build.0 = Debug|Xenon
+		{FC19316B-CBC6-4396-8B57-7651E617A369}.Final Xenon.ActiveCfg = Final|Xenon
+		{FC19316B-CBC6-4396-8B57-7651E617A369}.Final Xenon.Build.0 = Final|Xenon
+		{FC19316B-CBC6-4396-8B57-7651E617A369}.Playtest Xenon.ActiveCfg = Playtest|Xenon
+		{FC19316B-CBC6-4396-8B57-7651E617A369}.Playtest Xenon.Build.0 = Playtest|Xenon
+		{FC19316B-CBC6-4396-8B57-7651E617A369}.Profile Xenon.ActiveCfg = Profile|Win32
+		{FC19316B-CBC6-4396-8B57-7651E617A369}.Profile Xenon.Build.0 = Profile|Win32
+		{FC19316B-CBC6-4396-8B57-7651E617A369}.ProfileCallCap Xenon.ActiveCfg = ProfileCallCap|Xenon
+		{FC19316B-CBC6-4396-8B57-7651E617A369}.ProfileCallCap Xenon.Build.0 = ProfileCallCap|Xenon
+		{FC19316B-CBC6-4396-8B57-7651E617A369}.ProfileFastCap Xenon.ActiveCfg = ProfileFastCap|Xenon
+		{FC19316B-CBC6-4396-8B57-7651E617A369}.ProfileFastCap Xenon.Build.0 = ProfileFastCap|Xenon
+		{1DB1EFE1-66B7-4276-B383-43CFA121E5A2}.Debug Xenon.ActiveCfg = Debug|Xenon
+		{1DB1EFE1-66B7-4276-B383-43CFA121E5A2}.Debug Xenon.Build.0 = Debug|Xenon
+		{1DB1EFE1-66B7-4276-B383-43CFA121E5A2}.Final Xenon.ActiveCfg = Final|Xenon
+		{1DB1EFE1-66B7-4276-B383-43CFA121E5A2}.Final Xenon.Build.0 = Final|Xenon
+		{1DB1EFE1-66B7-4276-B383-43CFA121E5A2}.Playtest Xenon.ActiveCfg = Playtest|Xenon
+		{1DB1EFE1-66B7-4276-B383-43CFA121E5A2}.Playtest Xenon.Build.0 = Playtest|Xenon
+		{1DB1EFE1-66B7-4276-B383-43CFA121E5A2}.Profile Xenon.ActiveCfg = Profile|Win32
+		{1DB1EFE1-66B7-4276-B383-43CFA121E5A2}.Profile Xenon.Build.0 = Profile|Win32
+		{1DB1EFE1-66B7-4276-B383-43CFA121E5A2}.ProfileCallCap Xenon.ActiveCfg = ProfileCallCap|Xenon
+		{1DB1EFE1-66B7-4276-B383-43CFA121E5A2}.ProfileCallCap Xenon.Build.0 = ProfileCallCap|Xenon
+		{1DB1EFE1-66B7-4276-B383-43CFA121E5A2}.ProfileFastCap Xenon.ActiveCfg = ProfileFastCap|Xenon
+		{1DB1EFE1-66B7-4276-B383-43CFA121E5A2}.ProfileFastCap Xenon.Build.0 = ProfileFastCap|Xenon
+		{33F038AF-FAFE-4FF6-B185-C6E4E215D8B9}.Debug Xenon.ActiveCfg = Debug|Xenon
+		{33F038AF-FAFE-4FF6-B185-C6E4E215D8B9}.Debug Xenon.Build.0 = Debug|Xenon
+		{33F038AF-FAFE-4FF6-B185-C6E4E215D8B9}.Final Xenon.ActiveCfg = Final|Xenon
+		{33F038AF-FAFE-4FF6-B185-C6E4E215D8B9}.Final Xenon.Build.0 = Final|Xenon
+		{33F038AF-FAFE-4FF6-B185-C6E4E215D8B9}.Playtest Xenon.ActiveCfg = Playtest|Xenon
+		{33F038AF-FAFE-4FF6-B185-C6E4E215D8B9}.Playtest Xenon.Build.0 = Playtest|Xenon
+		{33F038AF-FAFE-4FF6-B185-C6E4E215D8B9}.Profile Xenon.ActiveCfg = Profile|Xenon
+		{33F038AF-FAFE-4FF6-B185-C6E4E215D8B9}.Profile Xenon.Build.0 = Profile|Xenon
+		{33F038AF-FAFE-4FF6-B185-C6E4E215D8B9}.ProfileCallCap Xenon.ActiveCfg = ProfileCallCap|Xenon
+		{33F038AF-FAFE-4FF6-B185-C6E4E215D8B9}.ProfileCallCap Xenon.Build.0 = ProfileCallCap|Xenon
+		{33F038AF-FAFE-4FF6-B185-C6E4E215D8B9}.ProfileFastCap Xenon.ActiveCfg = ProfileFastCap|Xenon
+		{33F038AF-FAFE-4FF6-B185-C6E4E215D8B9}.ProfileFastCap Xenon.Build.0 = ProfileFastCap|Xenon
+		{1E6CB453-DFFD-4E64-B95F-63641B7D8971}.Debug Xenon.ActiveCfg = Debug|Xenon
+		{1E6CB453-DFFD-4E64-B95F-63641B7D8971}.Debug Xenon.Build.0 = Debug|Xenon
+		{1E6CB453-DFFD-4E64-B95F-63641B7D8971}.Final Xenon.ActiveCfg = Final|Xenon
+		{1E6CB453-DFFD-4E64-B95F-63641B7D8971}.Final Xenon.Build.0 = Final|Xenon
+		{1E6CB453-DFFD-4E64-B95F-63641B7D8971}.Playtest Xenon.ActiveCfg = Playtest|Xenon
+		{1E6CB453-DFFD-4E64-B95F-63641B7D8971}.Playtest Xenon.Build.0 = Playtest|Xenon
+		{1E6CB453-DFFD-4E64-B95F-63641B7D8971}.Profile Xenon.ActiveCfg = Profile|Win32
+		{1E6CB453-DFFD-4E64-B95F-63641B7D8971}.Profile Xenon.Build.0 = Profile|Win32
+		{1E6CB453-DFFD-4E64-B95F-63641B7D8971}.ProfileCallCap Xenon.ActiveCfg = ProfileCallCap|Xenon
+		{1E6CB453-DFFD-4E64-B95F-63641B7D8971}.ProfileCallCap Xenon.Build.0 = ProfileCallCap|Xenon
+		{1E6CB453-DFFD-4E64-B95F-63641B7D8971}.ProfileFastCap Xenon.ActiveCfg = ProfileFastCap|Xenon
+		{1E6CB453-DFFD-4E64-B95F-63641B7D8971}.ProfileFastCap Xenon.Build.0 = ProfileFastCap|Xenon
+		{EE08B261-74CD-44A9-BC15-B26689FCD9A0}.Debug Xenon.ActiveCfg = Debug|Xenon
+		{EE08B261-74CD-44A9-BC15-B26689FCD9A0}.Debug Xenon.Build.0 = Debug|Xenon
+		{EE08B261-74CD-44A9-BC15-B26689FCD9A0}.Final Xenon.ActiveCfg = Final|Xenon
+		{EE08B261-74CD-44A9-BC15-B26689FCD9A0}.Final Xenon.Build.0 = Final|Xenon
+		{EE08B261-74CD-44A9-BC15-B26689FCD9A0}.Playtest Xenon.ActiveCfg = Playtest|Xenon
+		{EE08B261-74CD-44A9-BC15-B26689FCD9A0}.Playtest Xenon.Build.0 = Playtest|Xenon
+		{EE08B261-74CD-44A9-BC15-B26689FCD9A0}.Profile Xenon.ActiveCfg = Profile|Win32
+		{EE08B261-74CD-44A9-BC15-B26689FCD9A0}.Profile Xenon.Build.0 = Profile|Win32
+		{EE08B261-74CD-44A9-BC15-B26689FCD9A0}.ProfileCallCap Xenon.ActiveCfg = ProfileCallCap|Xenon
+		{EE08B261-74CD-44A9-BC15-B26689FCD9A0}.ProfileCallCap Xenon.Build.0 = ProfileCallCap|Xenon
+		{EE08B261-74CD-44A9-BC15-B26689FCD9A0}.ProfileFastCap Xenon.ActiveCfg = ProfileFastCap|Xenon
+		{EE08B261-74CD-44A9-BC15-B26689FCD9A0}.ProfileFastCap Xenon.Build.0 = ProfileFastCap|Xenon
+		{D35114E9-75CE-4DCA-8667-55FFE8887306}.Debug Xenon.ActiveCfg = Debug|Xenon
+		{D35114E9-75CE-4DCA-8667-55FFE8887306}.Debug Xenon.Build.0 = Debug|Xenon
+		{D35114E9-75CE-4DCA-8667-55FFE8887306}.Final Xenon.ActiveCfg = Final|Xenon
+		{D35114E9-75CE-4DCA-8667-55FFE8887306}.Final Xenon.Build.0 = Final|Xenon
+		{D35114E9-75CE-4DCA-8667-55FFE8887306}.Playtest Xenon.ActiveCfg = Playtest|Xenon
+		{D35114E9-75CE-4DCA-8667-55FFE8887306}.Playtest Xenon.Build.0 = Playtest|Xenon
+		{D35114E9-75CE-4DCA-8667-55FFE8887306}.Profile Xenon.ActiveCfg = Profile|Win32
+		{D35114E9-75CE-4DCA-8667-55FFE8887306}.Profile Xenon.Build.0 = Profile|Win32
+		{D35114E9-75CE-4DCA-8667-55FFE8887306}.ProfileCallCap Xenon.ActiveCfg = ProfileCallCap|Xenon
+		{D35114E9-75CE-4DCA-8667-55FFE8887306}.ProfileCallCap Xenon.Build.0 = ProfileCallCap|Xenon
+		{D35114E9-75CE-4DCA-8667-55FFE8887306}.ProfileFastCap Xenon.ActiveCfg = ProfileFastCap|Xenon
+		{D35114E9-75CE-4DCA-8667-55FFE8887306}.ProfileFastCap Xenon.Build.0 = ProfileFastCap|Xenon
+		{5170BC4F-CC1D-4BBC-AF0A-4489B87891E9}.Debug Xenon.ActiveCfg = Debug|Xenon
+		{5170BC4F-CC1D-4BBC-AF0A-4489B87891E9}.Debug Xenon.Build.0 = Debug|Xenon
+		{5170BC4F-CC1D-4BBC-AF0A-4489B87891E9}.Final Xenon.ActiveCfg = Final|Xenon
+		{5170BC4F-CC1D-4BBC-AF0A-4489B87891E9}.Final Xenon.Build.0 = Final|Xenon
+		{5170BC4F-CC1D-4BBC-AF0A-4489B87891E9}.Playtest Xenon.ActiveCfg = Playtest|Xenon
+		{5170BC4F-CC1D-4BBC-AF0A-4489B87891E9}.Playtest Xenon.Build.0 = Playtest|Xenon
+		{5170BC4F-CC1D-4BBC-AF0A-4489B87891E9}.Profile Xenon.ActiveCfg = Profile|Win32
+		{5170BC4F-CC1D-4BBC-AF0A-4489B87891E9}.Profile Xenon.Build.0 = Profile|Win32
+		{5170BC4F-CC1D-4BBC-AF0A-4489B87891E9}.ProfileCallCap Xenon.ActiveCfg = ProfileCallCap|Xenon
+		{5170BC4F-CC1D-4BBC-AF0A-4489B87891E9}.ProfileCallCap Xenon.Build.0 = ProfileCallCap|Xenon
+		{5170BC4F-CC1D-4BBC-AF0A-4489B87891E9}.ProfileFastCap Xenon.ActiveCfg = ProfileFastCap|Xenon
+		{5170BC4F-CC1D-4BBC-AF0A-4489B87891E9}.ProfileFastCap Xenon.Build.0 = ProfileFastCap|Xenon
+		{CC1BB2A0-F8FD-4A35-90DF-D34DD605B9DE}.Debug Xenon.ActiveCfg = Debug|Xenon
+		{CC1BB2A0-F8FD-4A35-90DF-D34DD605B9DE}.Debug Xenon.Build.0 = Debug|Xenon
+		{CC1BB2A0-F8FD-4A35-90DF-D34DD605B9DE}.Final Xenon.ActiveCfg = Final|Xenon
+		{CC1BB2A0-F8FD-4A35-90DF-D34DD605B9DE}.Final Xenon.Build.0 = Final|Xenon
+		{CC1BB2A0-F8FD-4A35-90DF-D34DD605B9DE}.Playtest Xenon.ActiveCfg = Playtest|Xenon
+		{CC1BB2A0-F8FD-4A35-90DF-D34DD605B9DE}.Playtest Xenon.Build.0 = Playtest|Xenon
+		{CC1BB2A0-F8FD-4A35-90DF-D34DD605B9DE}.Profile Xenon.ActiveCfg = Profile|Xenon
+		{CC1BB2A0-F8FD-4A35-90DF-D34DD605B9DE}.Profile Xenon.Build.0 = Profile|Xenon
+		{CC1BB2A0-F8FD-4A35-90DF-D34DD605B9DE}.ProfileCallCap Xenon.ActiveCfg = ProfileCallCap|Xenon
+		{CC1BB2A0-F8FD-4A35-90DF-D34DD605B9DE}.ProfileCallCap Xenon.Build.0 = ProfileCallCap|Xenon
+		{CC1BB2A0-F8FD-4A35-90DF-D34DD605B9DE}.ProfileFastCap Xenon.ActiveCfg = ProfileFastCap|Xenon
+		{CC1BB2A0-F8FD-4A35-90DF-D34DD605B9DE}.ProfileFastCap Xenon.Build.0 = ProfileFastCap|Xenon
+		{010B79A9-A4DE-454D-8C66-B6CC4D0539A2}.Debug Xenon.ActiveCfg = Debug|Xenon
+		{010B79A9-A4DE-454D-8C66-B6CC4D0539A2}.Debug Xenon.Build.0 = Debug|Xenon
+		{010B79A9-A4DE-454D-8C66-B6CC4D0539A2}.Final Xenon.ActiveCfg = Final|Xenon
+		{010B79A9-A4DE-454D-8C66-B6CC4D0539A2}.Final Xenon.Build.0 = Final|Xenon
+		{010B79A9-A4DE-454D-8C66-B6CC4D0539A2}.Playtest Xenon.ActiveCfg = Playtest|Xenon
+		{010B79A9-A4DE-454D-8C66-B6CC4D0539A2}.Playtest Xenon.Build.0 = Playtest|Xenon
+		{010B79A9-A4DE-454D-8C66-B6CC4D0539A2}.Profile Xenon.ActiveCfg = Profile|Xenon
+		{010B79A9-A4DE-454D-8C66-B6CC4D0539A2}.Profile Xenon.Build.0 = Profile|Xenon
+		{010B79A9-A4DE-454D-8C66-B6CC4D0539A2}.ProfileCallCap Xenon.ActiveCfg = ProfileCallCap|Xenon
+		{010B79A9-A4DE-454D-8C66-B6CC4D0539A2}.ProfileCallCap Xenon.Build.0 = ProfileCallCap|Xenon
+		{010B79A9-A4DE-454D-8C66-B6CC4D0539A2}.ProfileFastCap Xenon.ActiveCfg = ProfileFastCap|Xenon
+		{010B79A9-A4DE-454D-8C66-B6CC4D0539A2}.ProfileFastCap Xenon.Build.0 = ProfileFastCap|Xenon
+		{6D065C60-FB33-4657-9C09-E26C8DC9F695}.Debug Xenon.ActiveCfg = Debug|Xenon
+		{6D065C60-FB33-4657-9C09-E26C8DC9F695}.Debug Xenon.Build.0 = Debug|Xenon
+		{6D065C60-FB33-4657-9C09-E26C8DC9F695}.Final Xenon.ActiveCfg = Final|Xenon
+		{6D065C60-FB33-4657-9C09-E26C8DC9F695}.Final Xenon.Build.0 = Final|Xenon
+		{6D065C60-FB33-4657-9C09-E26C8DC9F695}.Playtest Xenon.ActiveCfg = Playtest|Xenon
+		{6D065C60-FB33-4657-9C09-E26C8DC9F695}.Playtest Xenon.Build.0 = Playtest|Xenon
+		{6D065C60-FB33-4657-9C09-E26C8DC9F695}.Profile Xenon.ActiveCfg = Profile|Xenon
+		{6D065C60-FB33-4657-9C09-E26C8DC9F695}.Profile Xenon.Build.0 = Profile|Xenon
+		{6D065C60-FB33-4657-9C09-E26C8DC9F695}.ProfileCallCap Xenon.ActiveCfg = ProfileCallCap|Xenon
+		{6D065C60-FB33-4657-9C09-E26C8DC9F695}.ProfileCallCap Xenon.Build.0 = ProfileCallCap|Xenon
+		{6D065C60-FB33-4657-9C09-E26C8DC9F695}.ProfileFastCap Xenon.ActiveCfg = ProfileFastCap|Xenon
+		{6D065C60-FB33-4657-9C09-E26C8DC9F695}.ProfileFastCap Xenon.Build.0 = ProfileFastCap|Xenon
+		{3B96AA5E-E639-4251-B8CC-59D79DFA14CB}.Debug Xenon.ActiveCfg = Debug|Xenon
+		{3B96AA5E-E639-4251-B8CC-59D79DFA14CB}.Debug Xenon.Build.0 = Debug|Xenon
+		{3B96AA5E-E639-4251-B8CC-59D79DFA14CB}.Final Xenon.ActiveCfg = Final|Xenon
+		{3B96AA5E-E639-4251-B8CC-59D79DFA14CB}.Final Xenon.Build.0 = Final|Xenon
+		{3B96AA5E-E639-4251-B8CC-59D79DFA14CB}.Playtest Xenon.ActiveCfg = Playtest|Xenon
+		{3B96AA5E-E639-4251-B8CC-59D79DFA14CB}.Playtest Xenon.Build.0 = Playtest|Xenon
+		{3B96AA5E-E639-4251-B8CC-59D79DFA14CB}.Profile Xenon.ActiveCfg = Profile|Xenon
+		{3B96AA5E-E639-4251-B8CC-59D79DFA14CB}.Profile Xenon.Build.0 = Profile|Xenon
+		{3B96AA5E-E639-4251-B8CC-59D79DFA14CB}.ProfileCallCap Xenon.ActiveCfg = ProfileCallCap|Xenon
+		{3B96AA5E-E639-4251-B8CC-59D79DFA14CB}.ProfileCallCap Xenon.Build.0 = ProfileCallCap|Xenon
+		{3B96AA5E-E639-4251-B8CC-59D79DFA14CB}.ProfileFastCap Xenon.ActiveCfg = ProfileFastCap|Xenon
+		{3B96AA5E-E639-4251-B8CC-59D79DFA14CB}.ProfileFastCap Xenon.Build.0 = ProfileFastCap|Xenon
+		{18B091CA-B6B8-453C-A2BA-30F348753FD1}.Debug Xenon.ActiveCfg = Debug|Xenon
+		{18B091CA-B6B8-453C-A2BA-30F348753FD1}.Debug Xenon.Build.0 = Debug|Xenon
+		{18B091CA-B6B8-453C-A2BA-30F348753FD1}.Final Xenon.ActiveCfg = Final|Xenon
+		{18B091CA-B6B8-453C-A2BA-30F348753FD1}.Final Xenon.Build.0 = Final|Xenon
+		{18B091CA-B6B8-453C-A2BA-30F348753FD1}.Playtest Xenon.ActiveCfg = Playtest|Xenon
+		{18B091CA-B6B8-453C-A2BA-30F348753FD1}.Playtest Xenon.Build.0 = Playtest|Xenon
+		{18B091CA-B6B8-453C-A2BA-30F348753FD1}.Profile Xenon.ActiveCfg = Profile|Xenon
+		{18B091CA-B6B8-453C-A2BA-30F348753FD1}.Profile Xenon.Build.0 = Profile|Xenon
+		{18B091CA-B6B8-453C-A2BA-30F348753FD1}.ProfileCallCap Xenon.ActiveCfg = ProfileCallCap|Xenon
+		{18B091CA-B6B8-453C-A2BA-30F348753FD1}.ProfileCallCap Xenon.Build.0 = ProfileCallCap|Xenon
+		{18B091CA-B6B8-453C-A2BA-30F348753FD1}.ProfileFastCap Xenon.ActiveCfg = ProfileFastCap|Xenon
+		{18B091CA-B6B8-453C-A2BA-30F348753FD1}.ProfileFastCap Xenon.Build.0 = ProfileFastCap|Xenon
+		{EE5C20A7-B3F6-4E2C-9667-0CD5C035732A}.Debug Xenon.ActiveCfg = Debug|Xenon
+		{EE5C20A7-B3F6-4E2C-9667-0CD5C035732A}.Debug Xenon.Build.0 = Debug|Xenon
+		{EE5C20A7-B3F6-4E2C-9667-0CD5C035732A}.Final Xenon.ActiveCfg = Final|Xenon
+		{EE5C20A7-B3F6-4E2C-9667-0CD5C035732A}.Final Xenon.Build.0 = Final|Xenon
+		{EE5C20A7-B3F6-4E2C-9667-0CD5C035732A}.Playtest Xenon.ActiveCfg = Playtest|Xenon
+		{EE5C20A7-B3F6-4E2C-9667-0CD5C035732A}.Playtest Xenon.Build.0 = Playtest|Xenon
+		{EE5C20A7-B3F6-4E2C-9667-0CD5C035732A}.Profile Xenon.ActiveCfg = Profile|Xenon
+		{EE5C20A7-B3F6-4E2C-9667-0CD5C035732A}.Profile Xenon.Build.0 = Profile|Xenon
+		{EE5C20A7-B3F6-4E2C-9667-0CD5C035732A}.ProfileCallCap Xenon.ActiveCfg = ProfileCallCap|Xenon
+		{EE5C20A7-B3F6-4E2C-9667-0CD5C035732A}.ProfileCallCap Xenon.Build.0 = ProfileCallCap|Xenon
+		{EE5C20A7-B3F6-4E2C-9667-0CD5C035732A}.ProfileFastCap Xenon.ActiveCfg = ProfileFastCap|Xenon
+		{EE5C20A7-B3F6-4E2C-9667-0CD5C035732A}.ProfileFastCap Xenon.Build.0 = ProfileFastCap|Xenon
+		{47117851-E570-47A2-9E2C-4B0F0E91AC13}.Debug Xenon.ActiveCfg = Debug|Xenon
+		{47117851-E570-47A2-9E2C-4B0F0E91AC13}.Debug Xenon.Build.0 = Debug|Xenon
+		{47117851-E570-47A2-9E2C-4B0F0E91AC13}.Final Xenon.ActiveCfg = Final|Xenon
+		{47117851-E570-47A2-9E2C-4B0F0E91AC13}.Final Xenon.Build.0 = Final|Xenon
+		{47117851-E570-47A2-9E2C-4B0F0E91AC13}.Playtest Xenon.ActiveCfg = Playtest|Xenon
+		{47117851-E570-47A2-9E2C-4B0F0E91AC13}.Playtest Xenon.Build.0 = Playtest|Xenon
+		{47117851-E570-47A2-9E2C-4B0F0E91AC13}.Profile Xenon.ActiveCfg = Profile|Xenon
+		{47117851-E570-47A2-9E2C-4B0F0E91AC13}.Profile Xenon.Build.0 = Profile|Xenon
+		{47117851-E570-47A2-9E2C-4B0F0E91AC13}.ProfileCallCap Xenon.ActiveCfg = ProfileCallCap|Xenon
+		{47117851-E570-47A2-9E2C-4B0F0E91AC13}.ProfileCallCap Xenon.Build.0 = ProfileCallCap|Xenon
+		{47117851-E570-47A2-9E2C-4B0F0E91AC13}.ProfileFastCap Xenon.ActiveCfg = ProfileFastCap|Xenon
+		{47117851-E570-47A2-9E2C-4B0F0E91AC13}.ProfileFastCap Xenon.Build.0 = ProfileFastCap|Xenon
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

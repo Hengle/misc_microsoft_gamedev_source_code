@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gr2Data2", "gr2Data2\gr2Data2.csproj", "{A6F38210-59FF-4DD2-B036-7CD13B8BBABA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EditorCore", "..\PhoenixEditor\EditorCore\EditorCore.csproj", "{D93EDAAC-3545-4224-A9EF-9A7426EE9E39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelSystem", "..\PhoenixEditor\ModelSystem\ModelSystem.csproj", "{4DDEF9AB-DF2F-42CD-9D2B-BEE1824E8119}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Renderer", "..\PhoenixEditor\Renderer\Renderer.csproj", "{16DF09C9-E688-44DC-94A6-0390289021D8}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 3
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = gr2Data2\\gr2Data2.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = gr2Data2\\
+		SccProjectUniqueName2 = ..\\PhoenixEditor\\ModelSystem\\ModelSystem.csproj
+		SccLocalPath2 = ..\\PhoenixEditor
+		SccProjectFilePathRelativizedFromConnection2 = ModelSystem\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6F38210-59FF-4DD2-B036-7CD13B8BBABA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6F38210-59FF-4DD2-B036-7CD13B8BBABA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6F38210-59FF-4DD2-B036-7CD13B8BBABA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6F38210-59FF-4DD2-B036-7CD13B8BBABA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D93EDAAC-3545-4224-A9EF-9A7426EE9E39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D93EDAAC-3545-4224-A9EF-9A7426EE9E39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D93EDAAC-3545-4224-A9EF-9A7426EE9E39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D93EDAAC-3545-4224-A9EF-9A7426EE9E39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DDEF9AB-DF2F-42CD-9D2B-BEE1824E8119}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DDEF9AB-DF2F-42CD-9D2B-BEE1824E8119}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DDEF9AB-DF2F-42CD-9D2B-BEE1824E8119}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DDEF9AB-DF2F-42CD-9D2B-BEE1824E8119}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16DF09C9-E688-44DC-94A6-0390289021D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16DF09C9-E688-44DC-94A6-0390289021D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16DF09C9-E688-44DC-94A6-0390289021D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16DF09C9-E688-44DC-94A6-0390289021D8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

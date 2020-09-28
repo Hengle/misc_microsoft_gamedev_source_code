@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dataBuild", "dataBuild.vcproj", "{429F2681-69C8-416A-B978-D19207DA7849}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1E6CB453-DFFD-4E64-B95F-63641B7D8971} = {1E6CB453-DFFD-4E64-B95F-63641B7D8971}
+		{FC19316B-CBC6-4396-8B57-7651E617A369} = {FC19316B-CBC6-4396-8B57-7651E617A369}
+		{D35114E9-75CE-4DCA-8667-55FFE8887306} = {D35114E9-75CE-4DCA-8667-55FFE8887306}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "compression", "..\..\compression\compression.vcproj", "{1E6CB453-DFFD-4E64-B95F-63641B7D8971}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xcore", "..\..\xcore\xcore.vcproj", "{FC19316B-CBC6-4396-8B57-7651E617A369}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ximage", "..\..\ximage\ximage.vcproj", "{D35114E9-75CE-4DCA-8667-55FFE8887306}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 5
+		SccProjectUniqueName0 = ..\\..\\compression\\compression.vcproj
+		SccLocalPath0 = ..\\..
+		SccProjectFilePathRelativizedFromConnection0 = compression\\
+		SccProjectUniqueName1 = ..\\..\\xcore\\xcore.vcproj
+		SccLocalPath1 = ..\\..
+		SccProjectFilePathRelativizedFromConnection1 = xcore\\
+		SccProjectUniqueName2 = ..\\..\\ximage\\ximage.vcproj
+		SccLocalPath2 = ..\\..
+		SccProjectFilePathRelativizedFromConnection2 = ximage\\
+		SccProjectUniqueName3 = dataBuild.vcproj
+		SccLocalPath3 = ..
+		SccProjectFilePathRelativizedFromConnection3 = dataBuild\\
+		SccProjectName4 = Perforce\u0020Project
+		SccLocalPath4 = ..
+		SccProvider4 = MSSCCI:Perforce\u0020SCM
+		SccProjectFilePathRelativizedFromConnection4 = dataBuild\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Final|Win32 = Final|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{429F2681-69C8-416A-B978-D19207DA7849}.Debug|Win32.ActiveCfg = Debug|Win32
+		{429F2681-69C8-416A-B978-D19207DA7849}.Debug|Win32.Build.0 = Debug|Win32
+		{429F2681-69C8-416A-B978-D19207DA7849}.Final|Win32.ActiveCfg = Final|Win32
+		{429F2681-69C8-416A-B978-D19207DA7849}.Final|Win32.Build.0 = Final|Win32
+		{1E6CB453-DFFD-4E64-B95F-63641B7D8971}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1E6CB453-DFFD-4E64-B95F-63641B7D8971}.Debug|Win32.Build.0 = Debug|Win32
+		{1E6CB453-DFFD-4E64-B95F-63641B7D8971}.Final|Win32.ActiveCfg = Final|Win32
+		{1E6CB453-DFFD-4E64-B95F-63641B7D8971}.Final|Win32.Build.0 = Final|Win32
+		{FC19316B-CBC6-4396-8B57-7651E617A369}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FC19316B-CBC6-4396-8B57-7651E617A369}.Debug|Win32.Build.0 = Debug|Win32
+		{FC19316B-CBC6-4396-8B57-7651E617A369}.Final|Win32.ActiveCfg = Final|Win32
+		{FC19316B-CBC6-4396-8B57-7651E617A369}.Final|Win32.Build.0 = Final|Win32
+		{D35114E9-75CE-4DCA-8667-55FFE8887306}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D35114E9-75CE-4DCA-8667-55FFE8887306}.Debug|Win32.Build.0 = Debug|Win32
+		{D35114E9-75CE-4DCA-8667-55FFE8887306}.Final|Win32.ActiveCfg = Final|Win32
+		{D35114E9-75CE-4DCA-8667-55FFE8887306}.Final|Win32.Build.0 = Final|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,81 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoenixBuildServer", "PhoenixBuildServer\PhoenixBuildServer.csproj", "{17D798F9-37D5-4FFE-A3FE-E4A92E7426C3}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "2267"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "C:\...\PhoenixBuildSystem\", "PhoenixBuildSystem", "{DA1F615E-C591-4455-93C7-5E1C8DAFD814}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "Perforce Project"
+		SccAuxPath = ""
+		SccLocalPath = ".."
+		SccProvider = "MSSCCI:Perforce SCM"
+		Debug.AspNetCompiler.VirtualPath = "/PhoenixBuildSystem"
+		Debug.AspNetCompiler.PhysicalPath = "PhoenixBuildSystem\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\PhoenixBuildSystem\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/PhoenixBuildSystem"
+		Release.AspNetCompiler.PhysicalPath = "PhoenixBuildSystem\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\PhoenixBuildSystem\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "3950"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 3
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = PhoenixBuildServer\\PhoenixBuildServer.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = PhoenixBuildServer\\
+		SccWebProject2 = true
+		SccProjectUniqueName2 = PhoenixBuildSystem
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = PhoenixBuildSystem\\
+		SccProjectEnlistmentChoice2 = 2
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Release|.NET = Release|.NET
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17D798F9-37D5-4FFE-A3FE-E4A92E7426C3}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{17D798F9-37D5-4FFE-A3FE-E4A92E7426C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17D798F9-37D5-4FFE-A3FE-E4A92E7426C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17D798F9-37D5-4FFE-A3FE-E4A92E7426C3}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{17D798F9-37D5-4FFE-A3FE-E4A92E7426C3}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{17D798F9-37D5-4FFE-A3FE-E4A92E7426C3}.Release|.NET.ActiveCfg = Release|Any CPU
+		{17D798F9-37D5-4FFE-A3FE-E4A92E7426C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17D798F9-37D5-4FFE-A3FE-E4A92E7426C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17D798F9-37D5-4FFE-A3FE-E4A92E7426C3}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{17D798F9-37D5-4FFE-A3FE-E4A92E7426C3}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{DA1F615E-C591-4455-93C7-5E1C8DAFD814}.Debug|.NET.ActiveCfg = Debug|.NET
+		{DA1F615E-C591-4455-93C7-5E1C8DAFD814}.Debug|.NET.Build.0 = Debug|.NET
+		{DA1F615E-C591-4455-93C7-5E1C8DAFD814}.Debug|Any CPU.ActiveCfg = Debug|.NET
+		{DA1F615E-C591-4455-93C7-5E1C8DAFD814}.Debug|Mixed Platforms.ActiveCfg = Debug|.NET
+		{DA1F615E-C591-4455-93C7-5E1C8DAFD814}.Debug|Mixed Platforms.Build.0 = Debug|.NET
+		{DA1F615E-C591-4455-93C7-5E1C8DAFD814}.Release|.NET.ActiveCfg = Debug|.NET
+		{DA1F615E-C591-4455-93C7-5E1C8DAFD814}.Release|.NET.Build.0 = Debug|.NET
+		{DA1F615E-C591-4455-93C7-5E1C8DAFD814}.Release|Any CPU.ActiveCfg = Debug|.NET
+		{DA1F615E-C591-4455-93C7-5E1C8DAFD814}.Release|Mixed Platforms.ActiveCfg = Debug|.NET
+		{DA1F615E-C591-4455-93C7-5E1C8DAFD814}.Release|Mixed Platforms.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

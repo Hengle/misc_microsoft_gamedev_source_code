@@ -1,0 +1,77 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "p4dn", "p4dn\p4dn.vcproj", "{79872B7D-711D-410F-B60F-A60E0DE0301F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P4API", "P4API\P4API.csproj", "{4706B526-42F0-420E-9CF2-B0AB775C8E47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P4.NetTestDriver", "..\test\src\P4.NetTestDriver\P4.NetTestDriver.csproj", "{76CAB589-363E-4912-BDE0-9FABDDA1E6CF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{39CFE0C1-1DD0-4F21-B841-F3F5D50F85EA}"
+	ProjectSection(SolutionItems) = preProject
+		..\doc\APIComparisons.html = ..\doc\APIComparisons.html
+		..\doc\Copyright.html = ..\doc\Copyright.html
+		..\doc\GettingStarted.html = ..\doc\GettingStarted.html
+		..\doc\KnownIssues.html = ..\doc\KnownIssues.html
+		..\doc\Overview.html = ..\doc\Overview.html
+		..\doc\SampleApps.html = ..\doc\SampleApps.html
+		..\doc\style.css = ..\doc\style.css
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 4
+		SccProjectName0 = Perforce\u0020Project
+		SccLocalPath0 = ..
+		SccProvider0 = MSSCCI:Perforce\u0020SCM
+		SccProjectFilePathRelativizedFromConnection0 = src\\
+		SccProjectUniqueName1 = p4dn\\p4dn.vcproj
+		SccLocalPath1 = p4dn
+		SccProjectUniqueName2 = P4API\\P4API.csproj
+		SccLocalPath2 = P4API
+		SccProjectUniqueName3 = ..\\test\\src\\P4.NetTestDriver\\P4.NetTestDriver.csproj
+		SccLocalPath3 = ..\\test\\src\\P4.NetTestDriver
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79872B7D-711D-410F-B60F-A60E0DE0301F}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{79872B7D-711D-410F-B60F-A60E0DE0301F}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{79872B7D-711D-410F-B60F-A60E0DE0301F}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{79872B7D-711D-410F-B60F-A60E0DE0301F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{79872B7D-711D-410F-B60F-A60E0DE0301F}.Debug|Win32.Build.0 = Debug|Win32
+		{79872B7D-711D-410F-B60F-A60E0DE0301F}.Release|Any CPU.ActiveCfg = Release|Win32
+		{79872B7D-711D-410F-B60F-A60E0DE0301F}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{79872B7D-711D-410F-B60F-A60E0DE0301F}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{79872B7D-711D-410F-B60F-A60E0DE0301F}.Release|Win32.ActiveCfg = Release|Win32
+		{79872B7D-711D-410F-B60F-A60E0DE0301F}.Release|Win32.Build.0 = Release|Win32
+		{4706B526-42F0-420E-9CF2-B0AB775C8E47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4706B526-42F0-420E-9CF2-B0AB775C8E47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4706B526-42F0-420E-9CF2-B0AB775C8E47}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{4706B526-42F0-420E-9CF2-B0AB775C8E47}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{4706B526-42F0-420E-9CF2-B0AB775C8E47}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{4706B526-42F0-420E-9CF2-B0AB775C8E47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4706B526-42F0-420E-9CF2-B0AB775C8E47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4706B526-42F0-420E-9CF2-B0AB775C8E47}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{4706B526-42F0-420E-9CF2-B0AB775C8E47}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{4706B526-42F0-420E-9CF2-B0AB775C8E47}.Release|Win32.ActiveCfg = Release|Any CPU
+		{76CAB589-363E-4912-BDE0-9FABDDA1E6CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76CAB589-363E-4912-BDE0-9FABDDA1E6CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76CAB589-363E-4912-BDE0-9FABDDA1E6CF}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{76CAB589-363E-4912-BDE0-9FABDDA1E6CF}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{76CAB589-363E-4912-BDE0-9FABDDA1E6CF}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{76CAB589-363E-4912-BDE0-9FABDDA1E6CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76CAB589-363E-4912-BDE0-9FABDDA1E6CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76CAB589-363E-4912-BDE0-9FABDDA1E6CF}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{76CAB589-363E-4912-BDE0-9FABDDA1E6CF}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{76CAB589-363E-4912-BDE0-9FABDDA1E6CF}.Release|Win32.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

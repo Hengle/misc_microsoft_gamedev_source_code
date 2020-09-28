@@ -1,0 +1,1267 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E9B1475C-9A7F-4D2C-9706-348949CBB319}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PhoenixEditor</RootNamespace>
+    <AssemblyName>PhoenixEditor</AssemblyName>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ColorPicker, Version=0.1.1.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="InterProcessComm, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.DirectX, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.DirectX.Direct3D, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.DirectX.Direct3DX, Version=1.0.2909.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.DirectX.DirectInput, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.Ink, Version=1.7.2600.2180, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.VisualC" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Xceed.Chart, Version=4.0.100.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.Chart.Core, Version=4.0.100.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.Chart.DataManipulation, Version=4.0.100.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.Chart.Graphics2D, Version=4.0.100.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.Chart.GraphicsCore, Version=4.0.100.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.Chart.GraphicsGL, Version=4.0.100.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.Chart.Standard, Version=4.0.100.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.Chart.UIControls, Version=4.0.100.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.Chart.Utilities, Version=4.0.100.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.Compression, Version=2.3.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.DockingWindows, Version=1.0.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.DockingWindows.Design, Version=1.0.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.Editors, Version=2.0.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.FileSystem, Version=2.3.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.Grid, Version=3.0.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.SmartUI, Version=3.3.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.SmartUI.Controls, Version=3.3.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.SmartUI.Design, Version=3.3.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Xceed.SmartUI.UIStyle, Version=3.3.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.UI, Version=1.0.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.Validation, Version=1.0.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.Zip, Version=2.3.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="xdevkit, Version=2.0.4025.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Microsoft Xbox 360 SDK\bin\win32\xdevkit.dll</HintPath>
+    </Reference>
+    <Reference Include="ZedGraph, Version=5.0.9.41461, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\work\tools\PhoenixEditor\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CinematicEditor\Cinematic.cs" />
+    <Compile Include="ClientTabPages\ControllerConfigurationsPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClientTabPages\ControllerConfigurationsPage.Designer.cs">
+      <DependentUpon>ControllerConfigurationsPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientTabPages\HintDatabasePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClientTabPages\HintDatabasePage.Designer.cs">
+      <DependentUpon>HintDatabasePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientTabPages\ObjectEditorPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClientTabPages\ObjectEditorPage.Designer.cs">
+      <DependentUpon>ObjectEditorPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientTabPages\OptionsPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClientTabPages\OptionsPage.Designer.cs">
+      <DependentUpon>OptionsPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientTabPages\PowersPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClientTabPages\PowersPage.Designer.cs">
+      <DependentUpon>PowersPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientTabPages\QuickStartPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClientTabPages\QuickStartPage.Designer.cs">
+      <DependentUpon>QuickStartPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientTabPages\ScenarioDataPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClientTabPages\ScenarioDataPage.Designer.cs">
+      <DependentUpon>ScenarioDataPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientTabPages\ScenarioEditorPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClientTabPages\ScenarioEditorPage.Designer.cs">
+      <DependentUpon>ScenarioEditorPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientTabPages\StringTablePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClientTabPages\StringTablePage.Designer.cs">
+      <DependentUpon>StringTablePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientTabPages\TerrainTypePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClientTabPages\TerrainTypePage.Designer.cs">
+      <DependentUpon>TerrainTypePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientTabPages\TriggerDataDefinitionPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClientTabPages\TriggerDataDefinitionPage.Designer.cs">
+      <DependentUpon>TriggerDataDefinitionPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientTabPages\TriggerTemplatePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClientTabPages\TriggerTemplatePage.Designer.cs">
+      <DependentUpon>TriggerTemplatePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClipArtPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClipArtPicker.Designer.cs">
+      <DependentUpon>ClipArtPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BatchExporter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BatchExporter.Designer.cs">
+      <DependentUpon>BatchExporter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FractalUISettings.cs" />
+    <Compile Include="Controls\ImageSourcePicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ImageSourcePicker.Designer.cs">
+      <DependentUpon>ImageSourcePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SliderPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SliderPicker.designer.cs">
+      <DependentUpon>SliderPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ErrorList.Designer.cs">
+      <DependentUpon>ErrorList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExportDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExportDialog.Designer.cs">
+      <DependentUpon>ExportDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExporterResults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExporterResults.Designer.cs">
+      <DependentUpon>ExporterResults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExportWorkCoordinator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExportWorkCoordinator.Designer.cs">
+      <DependentUpon>ExportWorkCoordinator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FilterDialogs\erosion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FilterDialogs\erosion.Designer.cs">
+      <DependentUpon>erosion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FilterDialogs\maskfromSlope.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FilterDialogs\maskfromSlope.Designer.cs">
+      <DependentUpon>maskfromSlope.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FilterDialogs\MemoryEstimateDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FilterDialogs\MemoryEstimateDlg.Designer.cs">
+      <DependentUpon>MemoryEstimateDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FilterDialogs\mesaTerrain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FilterDialogs\mesaTerrain.Designer.cs">
+      <DependentUpon>mesaTerrain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FilterDialogs\randomTerrain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FilterDialogs\randomTerrain.Designer.cs">
+      <DependentUpon>randomTerrain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FilterDialogs\terraceTerrain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FilterDialogs\terraceTerrain.Designer.cs">
+      <DependentUpon>terraceTerrain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FloatSlider.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FloatSlider.Designer.cs">
+      <DependentUpon>FloatSlider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GR2ObjectImporter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GR2ObjectImporter.Designer.cs">
+      <DependentUpon>GR2ObjectImporter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocStringDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocStringDlg.Designer.cs">
+      <DependentUpon>LocStringDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaskGenFrm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MaskGenFrm.Designer.cs">
+      <DependentUpon>MaskGenFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaskLayers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MaskLayers.Designer.cs">
+      <DependentUpon>MaskLayers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifierControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModifierControl.Designer.cs">
+      <DependentUpon>ModifierControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewClipArt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewClipArt.Designer.cs">
+      <DependentUpon>NewClipArt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewProject.Designer.cs">
+      <DependentUpon>NewProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NoiseSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NoiseSettings.Designer.cs">
+      <DependentUpon>NoiseSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ObjectProperties.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ObjectProperties.Designer.cs">
+      <DependentUpon>ObjectProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpenProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpenProject.Designer.cs">
+      <DependentUpon>OpenProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhoenixEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhoenixEditor.Designer.cs">
+      <DependentUpon>PhoenixEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlacementHelper.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PlacementHelper.Designer.cs">
+      <DependentUpon>PlacementHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="PropertiesWindow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertiesWindow.Designer.cs">
+      <DependentUpon>PropertiesWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ClientTabPages\ControllerConfigurationsPage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControllerConfigurationsPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientTabPages\HintDatabasePage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HintDatabasePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientTabPages\ObjectEditorPage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ObjectEditorPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientTabPages\OptionsPage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OptionsPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientTabPages\PowersPage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PowersPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientTabPages\QuickStartPage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>QuickStartPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientTabPages\ScenarioDataPage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ScenarioDataPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientTabPages\ScenarioEditorPage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ScenarioEditorPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientTabPages\StringTablePage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>StringTablePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientTabPages\TerrainTypePage.resx">
+      <DependentUpon>TerrainTypePage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientTabPages\TriggerDataDefinitionPage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TriggerDataDefinitionPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientTabPages\TriggerTemplatePage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TriggerTemplatePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClipArtPicker.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ClipArtPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BatchExporter.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BatchExporter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ImageSourcePicker.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ImageSourcePicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SliderPicker.resx">
+      <DependentUpon>SliderPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ErrorList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ErrorList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExportDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExportDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExporterResults.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExporterResults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExportWorkCoordinator.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExportWorkCoordinator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterDialogs\erosion.resx">
+      <DependentUpon>erosion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterDialogs\maskfromSlope.resx">
+      <DependentUpon>maskfromSlope.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterDialogs\MemoryEstimateDlg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MemoryEstimateDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterDialogs\mesaTerrain.resx">
+      <DependentUpon>mesaTerrain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterDialogs\randomTerrain.resx">
+      <DependentUpon>randomTerrain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterDialogs\terraceTerrain.resx">
+      <DependentUpon>terraceTerrain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FloatSlider.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FloatSlider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GR2ObjectImporter.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GR2ObjectImporter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocStringDlg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LocStringDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaskGenFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MaskGenFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaskLayers.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MaskLayers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifierControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ModifierControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewClipArt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewClipArt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewProject.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoiseSettings.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NoiseSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ObjectProperties.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ObjectProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpenProject.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpenProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhoenixEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PhoenixEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlacementHelper.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PlacementHelper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesWindow.resx">
+      <DependentUpon>PropertiesWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProtoObjectQuickEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ProtoObjectQuickEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioEditor\MapGenerator\ApplyMaskPropFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ApplyMaskPropFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioEditor\MapGenerator\ApplyObjPropFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ApplyObjPropFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioEditor\MapGenerator\ApplyTexturePropFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ApplyTexturePropFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioEditor\MapGenerator\ApplyTransPropFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ApplyTransPropFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioEditor\MapGenerator\MapPropFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MapPropFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioEditor\MapGenerator\RandomMapGenerationForm.resx">
+      <DependentUpon>RandomMapGenerationForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaveProject.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SaveProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioEditor\ActiveLabel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ActiveLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioEditor\AdvancedListItemPicker.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AdvancedListItemPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioEditor\AutoSaveDlg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AutoSaveDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioEditor\BasicControlPoint.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BasicControlPoint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioEditor\BasicTypedSuperList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BasicTypedSuperList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioEditor\ClientNodeControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ClientNodeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioEditor\ComponentPickerHelp.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ComponentPickerHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioEditor\DesignerDataEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DesignerDataEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioEditor\DesignerObjectsPanel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DesignerObjectsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioEditor\ExportToOBJ.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExportToOBJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioEditor\FoliagePanel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FoliagePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioEditor\InnerGroupControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>InnerGroupControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioEditor\NotesNode.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NotesNode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioEditor\RoadPanel.resx">
+      <DependentUpon>RoadPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioEditor\ScenarioScriptsManager.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ScenarioScriptsManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioEditor\FunctorEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FunctorEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioEditor\GroupControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GroupControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioEditor\HardPointsBar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HardPointsBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioEditor\ObjectivesControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ObjectivesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioEditor\PlayerSettings.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PlayerSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioEditor\PreviewNavWindow.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PreviewNavWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioEditor\ScenarioSettings.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ScenarioSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioEditor\SimTileQuality.resx">
+      <DependentUpon>SimTileQuality.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioEditor\SuperList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SuperList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioEditor\SuperListDragButton.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SuperListDragButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioEditor\TemplateControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TemplateControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioEditor\TemplateVersionControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TemplateVersionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioEditor\TexturePaneFull.resx">
+      <DependentUpon>TexturePaneFull.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioEditor\TriggerComponentPopupHelp.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TriggerComponentPopupHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioEditor\TriggerComponentWorksheet.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TriggerComponentWorksheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioEditor\TriggerControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TriggerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioEditor\TriggerDataFileEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TriggerDataFileEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioEditor\TriggerEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TriggerEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioEditor\TriggerHostArea.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TriggerHostArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioEditor\TriggerParameterControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TriggerParameterControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioEditor\TriggerPopupInputForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TriggerPopupInputForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioEditor\TriggerScriptTools.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TriggerScriptTools.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioEditor\TriggerSearch.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TriggerSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioEditor\TriggerUserClass.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TriggerUserClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioEditor\TriggerValueList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TriggerValueList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioEditor\WaterPanel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WaterPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioSourceControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ScenarioSourceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioSourceControl2.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ScenarioSourceControl2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioWorkCoordinator.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ScenarioWorkCoordinator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SingleTopicCoordinator.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SingleTopicCoordinator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SoundObjectImporter.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SoundObjectImporter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabletSettings.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TabletSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TempLightSettings.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TempLightSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TexturePaletteViewer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TexturePaletteViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnitPicker.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnitPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkTopicControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WorkTopicControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorldObjectList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WorldObjectList.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ProtoObjectQuickEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProtoObjectQuickEditor.Designer.cs">
+      <DependentUpon>ProtoObjectQuickEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\MapGenerator\ApplyMaskPropFrm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\MapGenerator\ApplyMaskPropFrm.Designer.cs">
+      <DependentUpon>ApplyMaskPropFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\MapGenerator\ApplyObjPropFrm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\MapGenerator\ApplyObjPropFrm.Designer.cs">
+      <DependentUpon>ApplyObjPropFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\MapGenerator\ApplyTexturePropFrm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\MapGenerator\ApplyTexturePropFrm.Designer.cs">
+      <DependentUpon>ApplyTexturePropFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\MapGenerator\ApplyTransPropFrm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\MapGenerator\ApplyTransPropFrm.Designer.cs">
+      <DependentUpon>ApplyTransPropFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\MapGenerator\MapPropFrm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\MapGenerator\MapPropFrm.Designer.cs">
+      <DependentUpon>MapPropFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\MapGenerator\RandomMapGenerationForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\MapGenerator\RandomMapGenerationForm.designer.cs">
+      <DependentUpon>RandomMapGenerationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SaveProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaveProject.Designer.cs">
+      <DependentUpon>SaveProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\ActiveLabel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\ActiveLabel.Designer.cs">
+      <DependentUpon>ActiveLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\AdvancedListItemPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\AdvancedListItemPicker.Designer.cs">
+      <DependentUpon>AdvancedListItemPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\AutoSaveDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\AutoSaveDlg.Designer.cs">
+      <DependentUpon>AutoSaveDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\BasicControlPoint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\BasicControlPoint.Designer.cs">
+      <DependentUpon>BasicControlPoint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\BasicTypedSuperList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\BasicTypedSuperList.Designer.cs">
+      <DependentUpon>BasicTypedSuperList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\ClientNodeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\ClientNodeControl.Designer.cs">
+      <DependentUpon>ClientNodeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\ComponentPickerHelp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\ComponentPickerHelp.Designer.cs">
+      <DependentUpon>ComponentPickerHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\ConditionsList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\ConditionsList.Designer.cs">
+      <DependentUpon>ConditionsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\DesignerDataEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\DesignerDataEditor.Designer.cs">
+      <DependentUpon>DesignerDataEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\DesignerObjectsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\DesignerObjectsPanel.Designer.cs">
+      <DependentUpon>DesignerObjectsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\EffectsList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\EffectsList.Designer.cs">
+      <DependentUpon>EffectsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\ExportToOBJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\ExportToOBJ.Designer.cs">
+      <DependentUpon>ExportToOBJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\FoliagePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\FoliagePanel.Designer.cs">
+      <DependentUpon>FoliagePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\InnerGroupControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\InnerGroupControl.Designer.cs">
+      <DependentUpon>InnerGroupControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\NotesNode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\NotesNode.Designer.cs">
+      <DependentUpon>NotesNode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\RoadPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\RoadPanel.Designer.cs">
+      <DependentUpon>RoadPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\ScenarioScriptsManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\ScenarioScriptsManager.Designer.cs">
+      <DependentUpon>ScenarioScriptsManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\FunctionEditorList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\FunctionEditorList.Designer.cs">
+      <DependentUpon>FunctionEditorList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\FunctorEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\FunctorEditor.Designer.cs">
+      <DependentUpon>FunctorEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\GroupControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\GroupControl.Designer.cs">
+      <DependentUpon>GroupControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\HardPointsBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\HardPointsBar.Designer.cs">
+      <DependentUpon>HardPointsBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\NodeHostControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\ObjectivesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\ObjectivesControl.Designer.cs">
+      <DependentUpon>ObjectivesControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\PlayerSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\PlayerSettings.Designer.cs">
+      <DependentUpon>PlayerSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\PreviewNavWindow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\PreviewNavWindow.Designer.cs">
+      <DependentUpon>PreviewNavWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\ScenarioSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\ScenarioSettings.Designer.cs">
+      <DependentUpon>ScenarioSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\SimResources.cs" />
+    <Compile Include="ScenarioEditor\SimTileQuality.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\SimTileQuality.Designer.cs">
+      <DependentUpon>SimTileQuality.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\SuperList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\SuperList.Designer.cs">
+      <DependentUpon>SuperList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\SuperListDragButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\SuperListDragButton.Designer.cs">
+      <DependentUpon>SuperListDragButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\TemplateControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\TemplateControl.Designer.cs">
+      <DependentUpon>TemplateControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\TemplateMappingControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\TemplateMappingControl.Designer.cs">
+      <DependentUpon>TemplateMappingControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\TemplateVersionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\TemplateVersionControl.Designer.cs">
+      <DependentUpon>TemplateVersionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\TexturePaneFull.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\TexturePaneFull.Designer.cs">
+      <DependentUpon>TexturePaneFull.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\TriggerComponentPopupHelp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\TriggerComponentPopupHelp.Designer.cs">
+      <DependentUpon>TriggerComponentPopupHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\TriggerComponentWorksheet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\TriggerComponentWorksheet.Designer.cs">
+      <DependentUpon>TriggerComponentWorksheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\TriggerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\TriggerControl.Designer.cs">
+      <DependentUpon>TriggerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\TriggerDataFileEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\TriggerDataFileEditor.Designer.cs">
+      <DependentUpon>TriggerDataFileEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\TriggerEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\TriggerEditor.Designer.cs">
+      <DependentUpon>TriggerEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\TriggerHostArea.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\TriggerHostArea.Designer.cs">
+      <DependentUpon>TriggerHostArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\TriggerParameterControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\TriggerParameterControl.Designer.cs">
+      <DependentUpon>TriggerParameterControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\TriggerPopupInputForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\TriggerPopupInputForm.Designer.cs">
+      <DependentUpon>TriggerPopupInputForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\TriggerScriptTools.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\TriggerScriptTools.Designer.cs">
+      <DependentUpon>TriggerScriptTools.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\TriggerSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\TriggerSearch.Designer.cs">
+      <DependentUpon>TriggerSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\TriggerSystemClasses.cs" />
+    <Compile Include="ScenarioEditor\TriggerSystemDefinitions.cs" />
+    <Compile Include="ScenarioEditor\TriggerSystemTypes.cs" />
+    <Compile Include="ScenarioEditor\TriggerUIPropertyTypes.cs" />
+    <Compile Include="ScenarioEditor\TriggerUserClass.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\TriggerUserClass.Designer.cs">
+      <DependentUpon>TriggerUserClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\TriggerValueList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\TriggerValueList.Designer.cs">
+      <DependentUpon>TriggerValueList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioEditor\WaterPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioEditor\WaterPanel.Designer.cs">
+      <DependentUpon>WaterPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioSourceControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioSourceControl.Designer.cs">
+      <DependentUpon>ScenarioSourceControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioSourceControl2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioSourceControl2.Designer.cs">
+      <DependentUpon>ScenarioSourceControl2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioWorkCoordinator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScenarioWorkCoordinator.Designer.cs">
+      <DependentUpon>ScenarioWorkCoordinator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SingleTopicCoordinator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SingleTopicCoordinator.Designer.cs">
+      <DependentUpon>SingleTopicCoordinator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SoundObjectImporter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoundObjectImporter.Designer.cs">
+      <DependentUpon>SoundObjectImporter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabletSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabletSettings.Designer.cs">
+      <DependentUpon>TabletSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TempLightSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TempLightSettings.Designer.cs">
+      <DependentUpon>TempLightSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TexturePaletteViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TexturePaletteViewer.Designer.cs">
+      <DependentUpon>TexturePaletteViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TexturePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UnitPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UnitPicker.Designer.cs">
+      <DependentUpon>UnitPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkTopicControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkTopicControl.Designer.cs">
+      <DependentUpon>WorkTopicControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorldObjectList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorldObjectList.Designer.cs">
+      <DependentUpon>WorldObjectList.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EditorCore\EditorCore.csproj">
+      <Project>{D93EDAAC-3545-4224-A9EF-9A7426EE9E39}</Project>
+      <Name>EditorCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GameDatabase\GameDatabase.csproj">
+      <Project>{B8F7FE0B-3BED-4E9B-9D55-3AF4B5863B7B}</Project>
+      <Name>GameDatabase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MaskGraphGen\MaskGraphGen.csproj">
+      <Project>{64AC442A-D86D-4FE3-B194-0819A9870AF2}</Project>
+      <Name>MaskGraphGen</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ModelSystem\ModelSystem.csproj">
+      <Project>{4DDEF9AB-DF2F-42CD-9D2B-BEE1824E8119}</Project>
+      <Name>ModelSystem</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ParticleEditor\ParticleSystem.csproj">
+      <Project>{40CDF55D-66BC-4D06-AE56-94554E422F74}</Project>
+      <Name>ParticleSystem</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Renderer\Renderer.csproj">
+      <Project>{16DF09C9-E688-44DC-94A6-0390289021D8}</Project>
+      <Name>Renderer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sim\Sim.csproj">
+      <Project>{F0F5933B-2FC5-40F5-9B9C-3DC332A954AD}</Project>
+      <Name>Sim</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Terrain\Terrain.csproj">
+      <Project>{DB92A7C0-AD20-4B8F-87A1-4F891EF697A5}</Project>
+      <Name>Terrain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VisualEditor\VisualEditor.csproj">
+      <Project>{E8F38A85-47A1-442E-8D51-BD86DF03D042}</Project>
+      <Name>VisualEditor</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phx16.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\DataSources\EditorCore.SimpleFileStatus.datasource" />
+    <None Include="Properties\DataSources\PhoenixEditor.ClientTabPages.TerrainTypePage.datasource" />
+    <None Include="Properties\DataSources\PhoenixEditor.ScenarioEditor.TriggerValueContainer.datasource" />
+    <None Include="Properties\DataSources\SimEditor.PlayersPlayer.datasource" />
+    <None Include="ScenarioEditor\TriggerDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001b.jpg" />
+    <None Include="Resources\360controller.jpg" />
+    <None Include="Resources\360controller2.png" />
+    <None Include="Resources\360controller3.jpg" />
+    <Content Include="Resources\360icon.jpg" />
+    <None Include="Resources\colors.png" />
+    <None Include="Resources\colors.txt" />
+    <None Include="Resources\ApplyToCurrentTerrain.png" />
+    <None Include="Resources\MenuHelpAboutIcon.png" />
+    <None Include="Resources\MenuFileSaveAsIcon.png" />
+    <None Include="Resources\MenuFileNewIcon.png" />
+    <None Include="Resources\ImageFromDiskIcon.png" />
+    <None Include="Resources\MenuFileSaveIcon.png" />
+    <None Include="Resources\clearAOIcon.png" />
+    <None Include="Resources\calcAOIcon.png" />
+    <None Include="Resources\controller2.jpg" />
+    <None Include="Resources\controller2.bmp" />
+    <None Include="Resources\controller1.bmp" />
+    <None Include="Resources\controller.bmp" />
+    <None Include="Resources\controller_alpha.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ScenarioEditor\SubControls\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

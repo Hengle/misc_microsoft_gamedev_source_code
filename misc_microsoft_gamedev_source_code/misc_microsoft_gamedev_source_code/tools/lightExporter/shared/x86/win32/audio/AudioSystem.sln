@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AudioSystem", "AudioSystem.vcproj", "{B53B566D-DC24-44E2-84B7-78490B404A53}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{B53B566D-DC24-44E2-84B7-78490B404A53}.Debug.ActiveCfg = Debug|Win32
+		{B53B566D-DC24-44E2-84B7-78490B404A53}.Debug.Build.0 = Debug|Win32
+		{B53B566D-DC24-44E2-84B7-78490B404A53}.Release.ActiveCfg = Release|Win32
+		{B53B566D-DC24-44E2-84B7-78490B404A53}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

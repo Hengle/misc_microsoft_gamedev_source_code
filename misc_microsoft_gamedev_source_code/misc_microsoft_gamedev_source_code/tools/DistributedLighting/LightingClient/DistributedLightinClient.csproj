@@ -1,0 +1,91 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E8A2C19F-087C-4E07-89EB-338A3B6B55E9}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LightingClient</RootNamespace>
+    <AssemblyName>DistributedLightingClient</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.DirectX, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.DirectX.Direct3D, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.DirectX.Direct3DX, Version=1.0.2908.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Xceed.Compression.Formats, Version=1.0.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.FileSystem, Version=2.3.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.Zip, Version=2.3.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LightingGen\AmbientOcclusion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LightingGen\LightingTerrain\EditorCore\Perforce.cs" />
+    <Compile Include="LightingGen\LightingTerrain\SimObjects\GrannyInterface.cs" />
+    <Compile Include="LightingGen\LightingTerrain\SimObjects\GrannyModel.cs" />
+    <Compile Include="LightingGen\LightingTerrain\SimObjects\ModelManager.cs" />
+    <Compile Include="LightingGen\LightingTerrain\Terrain\ExportRenderTerrain.cs" />
+    <Compile Include="LightingGen\LightingTerrain\Renderer\FixedFunctionShaders.cs" />
+    <Compile Include="LightingGen\LightingTerrain\EditorCore\Math.cs" />
+    <Compile Include="LightingGen\LightingTerrain\EditorCore\ProcessorInfo.cs" />
+    <Compile Include="LightingGen\LightingTerrain\Renderer\RenderDevice.cs" />
+    <Compile Include="LightingGen\LightingTerrain\Renderer\ShaderManager.cs" />
+    <Compile Include="LightingGen\LightingTerrain\Terrain\TerrainData.cs" />
+    <Compile Include="LightingGen\LightingTerrain\Renderer\TextureManager.cs" />
+    <Compile Include="LightingGen\TerrainGlobals.cs" />
+    <Compile Include="LightingGen\LightingTerrain\Terrain\TerrainQuadNode.cs" />
+    <Compile Include="LightingGen\LightingTerrain\Terrain\TerrainVisualLOD.cs" />
+    <Compile Include="LightingGen\NetworkedLighting.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="LightingGen\TLDFile.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

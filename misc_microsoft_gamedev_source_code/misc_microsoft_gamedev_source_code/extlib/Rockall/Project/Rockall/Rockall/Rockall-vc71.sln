@@ -1,0 +1,33 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Rockall", "Rockall-vc71.vcproj", "{B58E2D24-6A65-4D57-B02D-C2CFA33A0439}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug Win32 = Debug Win32
+		Debug Xenon = Debug Xenon
+		Profile Win32 = Profile Win32
+		Profile Xenon = Profile Xenon
+		Release Win32 = Release Win32
+		Release Xenon = Release Xenon
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{B58E2D24-6A65-4D57-B02D-C2CFA33A0439}.Debug Win32.ActiveCfg = Debug|Win32
+		{B58E2D24-6A65-4D57-B02D-C2CFA33A0439}.Debug Win32.Build.0 = Debug|Win32
+		{B58E2D24-6A65-4D57-B02D-C2CFA33A0439}.Debug Xenon.ActiveCfg = Debug|Xenon
+		{B58E2D24-6A65-4D57-B02D-C2CFA33A0439}.Debug Xenon.Build.0 = Debug|Xenon
+		{B58E2D24-6A65-4D57-B02D-C2CFA33A0439}.Profile Win32.ActiveCfg = Profile|Win32
+		{B58E2D24-6A65-4D57-B02D-C2CFA33A0439}.Profile Win32.Build.0 = Profile|Win32
+		{B58E2D24-6A65-4D57-B02D-C2CFA33A0439}.Profile Xenon.ActiveCfg = Profile|Xenon
+		{B58E2D24-6A65-4D57-B02D-C2CFA33A0439}.Profile Xenon.Build.0 = Profile|Xenon
+		{B58E2D24-6A65-4D57-B02D-C2CFA33A0439}.Release Win32.ActiveCfg = Release|Win32
+		{B58E2D24-6A65-4D57-B02D-C2CFA33A0439}.Release Win32.Build.0 = Release|Win32
+		{B58E2D24-6A65-4D57-B02D-C2CFA33A0439}.Release Xenon.ActiveCfg = Release|Xenon
+		{B58E2D24-6A65-4D57-B02D-C2CFA33A0439}.Release Xenon.Build.0 = Release|Xenon
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

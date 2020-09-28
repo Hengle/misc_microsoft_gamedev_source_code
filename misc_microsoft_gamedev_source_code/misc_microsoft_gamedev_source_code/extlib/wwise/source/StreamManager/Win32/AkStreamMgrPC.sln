@@ -1,0 +1,31 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkStreamMgr", "AkStreamMgr.vcproj", "{7158CEF1-4D9C-4405-87DF-FF770D9B96F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug(StaticCRT)|Win32 = Debug(StaticCRT)|Win32
+		Debug|Win32 = Debug|Win32
+		Profile(StaticCRT)|Win32 = Profile(StaticCRT)|Win32
+		Profile|Win32 = Profile|Win32
+		Release(StaticCRT)|Win32 = Release(StaticCRT)|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7158CEF1-4D9C-4405-87DF-FF770D9B96F3}.Debug(StaticCRT)|Win32.ActiveCfg = Debug(StaticCRT)|Win32
+		{7158CEF1-4D9C-4405-87DF-FF770D9B96F3}.Debug(StaticCRT)|Win32.Build.0 = Debug(StaticCRT)|Win32
+		{7158CEF1-4D9C-4405-87DF-FF770D9B96F3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7158CEF1-4D9C-4405-87DF-FF770D9B96F3}.Debug|Win32.Build.0 = Debug|Win32
+		{7158CEF1-4D9C-4405-87DF-FF770D9B96F3}.Profile(StaticCRT)|Win32.ActiveCfg = Profile(StaticCRT)|Win32
+		{7158CEF1-4D9C-4405-87DF-FF770D9B96F3}.Profile(StaticCRT)|Win32.Build.0 = Profile(StaticCRT)|Win32
+		{7158CEF1-4D9C-4405-87DF-FF770D9B96F3}.Profile|Win32.ActiveCfg = Profile|Win32
+		{7158CEF1-4D9C-4405-87DF-FF770D9B96F3}.Profile|Win32.Build.0 = Profile|Win32
+		{7158CEF1-4D9C-4405-87DF-FF770D9B96F3}.Release(StaticCRT)|Win32.ActiveCfg = Release(StaticCRT)|Win32
+		{7158CEF1-4D9C-4405-87DF-FF770D9B96F3}.Release(StaticCRT)|Win32.Build.0 = Release(StaticCRT)|Win32
+		{7158CEF1-4D9C-4405-87DF-FF770D9B96F3}.Release|Win32.ActiveCfg = Release|Win32
+		{7158CEF1-4D9C-4405-87DF-FF770D9B96F3}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

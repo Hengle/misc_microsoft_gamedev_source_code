@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoteShellLibrary", "RemoteShellLibrary\RemoteShellLibrary.csproj", "{80170874-13D5-40DB-8CED-3EE5CAC397D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoteShellServer", "RemoteShellServer\RemoteShellServer.csproj", "{059E55B2-62DE-4A66-BC69-99906E640D3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoteShellClient", "RemoteShellClient\RemoteShellClient.csproj", "{790B4D3D-3E6E-4EBB-926D-39A09F5741E2}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 4
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = RemoteShellLibrary\\RemoteShellLibrary.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = RemoteShellLibrary\\
+		SccProjectUniqueName2 = RemoteShellServer\\RemoteShellServer.csproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = RemoteShellServer\\
+		SccProjectUniqueName3 = RemoteShellClient\\RemoteShellClient.csproj
+		SccLocalPath3 = .
+		SccProjectFilePathRelativizedFromConnection3 = RemoteShellClient\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80170874-13D5-40DB-8CED-3EE5CAC397D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80170874-13D5-40DB-8CED-3EE5CAC397D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80170874-13D5-40DB-8CED-3EE5CAC397D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80170874-13D5-40DB-8CED-3EE5CAC397D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{059E55B2-62DE-4A66-BC69-99906E640D3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{059E55B2-62DE-4A66-BC69-99906E640D3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{059E55B2-62DE-4A66-BC69-99906E640D3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{059E55B2-62DE-4A66-BC69-99906E640D3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{790B4D3D-3E6E-4EBB-926D-39A09F5741E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{790B4D3D-3E6E-4EBB-926D-39A09F5741E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{790B4D3D-3E6E-4EBB-926D-39A09F5741E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{790B4D3D-3E6E-4EBB-926D-39A09F5741E2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

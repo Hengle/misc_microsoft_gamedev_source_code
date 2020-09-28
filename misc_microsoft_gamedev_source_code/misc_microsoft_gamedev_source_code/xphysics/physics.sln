@@ -1,0 +1,33 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "physics", "physics.vcproj", "{16121742-CA57-41F0-9FA7-1A518A5DBBEF}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccProjectUniqueName0 = physics.vcproj
+		SccLocalPath0 = .
+		CanCheckoutShared = true
+		SccLocalPath1 = .
+		CanCheckoutShared = true
+		SolutionUniqueID = {E8B1B8A1-4067-425B-892F-1BAB4E691F96}
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Final = Final
+		Playtest = Playtest
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{16121742-CA57-41F0-9FA7-1A518A5DBBEF}.Debug.ActiveCfg = Debug|Win32
+		{16121742-CA57-41F0-9FA7-1A518A5DBBEF}.Debug.Build.0 = Debug|Win32
+		{16121742-CA57-41F0-9FA7-1A518A5DBBEF}.Final.ActiveCfg = Final|Win32
+		{16121742-CA57-41F0-9FA7-1A518A5DBBEF}.Final.Build.0 = Final|Win32
+		{16121742-CA57-41F0-9FA7-1A518A5DBBEF}.Playtest.ActiveCfg = Playtest|Win32
+		{16121742-CA57-41F0-9FA7-1A518A5DBBEF}.Playtest.Build.0 = Playtest|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

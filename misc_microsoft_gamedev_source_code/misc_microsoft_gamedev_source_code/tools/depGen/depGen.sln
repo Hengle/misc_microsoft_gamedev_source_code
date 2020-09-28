@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "depGen", "depGen\depGen.csproj", "{8582F4E8-15B3-48E2-A317-5DB5A788102D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleUtils", "ConsoleUtils\ConsoleUtils.csproj", "{296191FD-F57C-4B42-ADF6-3C075E5D432C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseUtils", "DatabaseUtils\DatabaseUtils.csproj", "{ED5B1A4A-10B4-4ABA-853C-AAEA5C1147E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyUtils", "DependencyUtils\DependencyUtils.csproj", "{B7D3E1AC-D193-48F3-AB06-B89C93D43CD1}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 5
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = depGen\\depGen.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = depGen\\
+		SccProjectUniqueName2 = ConsoleUtils\\ConsoleUtils.csproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = ConsoleUtils\\
+		SccProjectUniqueName3 = DatabaseUtils\\DatabaseUtils.csproj
+		SccLocalPath3 = .
+		SccProjectFilePathRelativizedFromConnection3 = DatabaseUtils\\
+		SccProjectUniqueName4 = DependencyUtils\\DependencyUtils.csproj
+		SccLocalPath4 = .
+		SccProjectFilePathRelativizedFromConnection4 = DependencyUtils\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8582F4E8-15B3-48E2-A317-5DB5A788102D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8582F4E8-15B3-48E2-A317-5DB5A788102D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8582F4E8-15B3-48E2-A317-5DB5A788102D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8582F4E8-15B3-48E2-A317-5DB5A788102D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{296191FD-F57C-4B42-ADF6-3C075E5D432C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{296191FD-F57C-4B42-ADF6-3C075E5D432C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{296191FD-F57C-4B42-ADF6-3C075E5D432C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{296191FD-F57C-4B42-ADF6-3C075E5D432C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED5B1A4A-10B4-4ABA-853C-AAEA5C1147E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED5B1A4A-10B4-4ABA-853C-AAEA5C1147E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED5B1A4A-10B4-4ABA-853C-AAEA5C1147E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED5B1A4A-10B4-4ABA-853C-AAEA5C1147E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7D3E1AC-D193-48F3-AB06-B89C93D43CD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7D3E1AC-D193-48F3-AB06-B89C93D43CD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7D3E1AC-D193-48F3-AB06-B89C93D43CD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7D3E1AC-D193-48F3-AB06-B89C93D43CD1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,168 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{64AC442A-D86D-4FE3-B194-0819A9870AF2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MaskGraphGen</RootNamespace>
+    <AssemblyName>MaskGraphGen</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.DirectX, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Canvas.cs" />
+    <Compile Include="CanvasNode.cs" />
+    <Compile Include="GDI_Static.cs" />
+    <Compile Include="MaskGenGraph\GraphBasedMask.cs" />
+    <Compile Include="GraphLine.cs" />
+    <Compile Include="MaskGenGraph\MaskDAGGraph\Devices\Device_Erosion\Device_HydraulicErosion.cs" />
+    <Compile Include="MaskGenGraph\MaskDAGGraph\Devices\Device_Generators\Device_BillowNoise.cs" />
+    <Compile Include="MaskGenGraph\MaskDAGGraph\Devices\Device_Generators\Device_Constant.cs" />
+    <Compile Include="MaskGenGraph\MaskDAGGraph\Devices\Device_Generators\Device_fBmNoise.cs" />
+    <Compile Include="MaskGenGraph\MaskDAGGraph\Devices\Device_Generators\Device_Gradient.cs" />
+    <Compile Include="MaskGenGraph\MaskDAGGraph\Devices\Device_Generators\Device_PerlinNoise.cs" />
+    <Compile Include="MaskGenGraph\MaskDAGGraph\Devices\Device_Generators\Device_RadialGradient.cs" />
+    <Compile Include="MaskGenGraph\MaskDAGGraph\Devices\Device_Generators\Device_RidgedNoise.cs" />
+    <Compile Include="MaskGenGraph\MaskDAGGraph\Devices\Device_Generators\Device_VoronoiNoise.cs" />
+    <Compile Include="MaskGenGraph\MaskDAGGraph\Devices\Device_GraphLogic\Device_Chooser.cs" />
+    <Compile Include="MaskGenGraph\MaskDAGGraph\Devices\Device_GraphLogic\Device_Splitter.cs" />
+    <Compile Include="MaskGenGraph\MaskDAGGraph\Devices\Device_Modifiers\Device_BiasGain.cs" />
+    <Compile Include="MaskGenGraph\MaskDAGGraph\Devices\Device_Modifiers\Device_Clamp.cs" />
+    <Compile Include="MaskGenGraph\MaskDAGGraph\Devices\Device_Modifiers\Device_Combiner.cs" />
+    <Compile Include="MaskGenGraph\MaskDAGGraph\Devices\Device_Modifiers\Device_Contract.cs" />
+    <Compile Include="MaskGenGraph\MaskDAGGraph\Devices\Device_Modifiers\Device_Curves.cs" />
+    <Compile Include="MaskGenGraph\MaskDAGGraph\Devices\Device_Modifiers\Device_CurvesDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaskGenGraph\MaskDAGGraph\Devices\Device_Modifiers\Device_CurvesDlg.Designer.cs">
+      <DependentUpon>Device_CurvesDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaskGenGraph\MaskDAGGraph\Devices\Device_Modifiers\Device_DistanceTransform.cs" />
+    <Compile Include="MaskGenGraph\MaskDAGGraph\Devices\Device_Modifiers\Device_Distort.cs" />
+    <Compile Include="MaskGenGraph\MaskDAGGraph\Devices\Device_Modifiers\Device_Expand.cs" />
+    <Compile Include="MaskGenGraph\MaskDAGGraph\Devices\Device_Modifiers\Device_Flipper.cs" />
+    <Compile Include="MaskGenGraph\MaskDAGGraph\Devices\Device_Modifiers\Device_GaussianBlur.cs" />
+    <Compile Include="MaskGenGraph\MaskDAGGraph\Devices\Device_Modifiers\Device_Inverter.cs" />
+    <Compile Include="MaskGenGraph\MaskDAGGraph\Devices\Device_Modifiers\Device_MedianBlur.cs" />
+    <Compile Include="MaskGenGraph\MaskDAGGraph\Devices\Device_Modifiers\Device_Mirror.cs" />
+    <Compile Include="MaskGenGraph\MaskDAGGraph\Devices\Device_Modifiers\Device_Smooth.cs" />
+    <Compile Include="MaskGenGraph\MaskDAGGraph\Devices\Device_Modifiers\Device_Terrace.cs" />
+    <Compile Include="MaskGenGraph\MaskDAGGraph\Devices\Device_Numeric\Device_RandomClampedFloat.cs" />
+    <Compile Include="MaskGenGraph\MaskDAGGraph\Devices\Device_Numeric\Device_RandomInt.cs" />
+    <Compile Include="MaskGenGraph\MaskDAGGraph\Devices\Device_Output\Device_FileOutput.cs" />
+    <Compile Include="MaskGenGraph\MaskDAGGraph\Devices\Device_Output\Device_FileOutputDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaskGenGraph\MaskDAGGraph\Devices\Device_Output\Device_FileOutputDlg.Designer.cs">
+      <DependentUpon>Device_FileOutputDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaskGenGraph\MaskDAGGraph\Devices\Device_Output\Device_ToCurrentMask.cs" />
+    <Compile Include="MaskGenGraph\MaskDAGGraph\Devices\Device_PropertyDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaskGenGraph\MaskDAGGraph\Devices\Device_PropertyDlg.Designer.cs">
+      <DependentUpon>Device_PropertyDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaskGenGraph\MaskDAGGraph\Devices\Device_Selectors\Device_SelectHeight.cs" />
+    <Compile Include="MaskGenGraph\MaskDAGGraph\Devices\Device_Selectors\Device_SelectSlope.cs" />
+    <Compile Include="MaskGenGraph\MaskDAGGraph\Devices\Devic_Input\Device_CurrentMask.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MaskGenGraph\MaskDAGGraph\Devices\Devic_Input\Device_MaskFromList.cs" />
+    <Compile Include="MaskGenGraph\MaskDAGGraph\Devices\Devic_Input\Device_MaskFromListDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaskGenGraph\MaskDAGGraph\Devices\Devic_Input\Device_MaskFromListDlg.Designer.cs">
+      <DependentUpon>Device_MaskFromListDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaskGenGraph\MaskDAGGraph\Devices\Devic_Input\Device_TerrainHeight.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MaskGenGraph\MaskDAGGraph\Devices\MaskDevice.cs" />
+    <Compile Include="MaskGenGraph\MaskDAGGraph\Mask.cs" />
+    <Compile Include="MaskGenGraph\MaskDAGGraph\MaskDAGCanvas.cs" />
+    <Compile Include="MaskGenGraph\MaskDAGGraph\MaskDAGConnectionPoints.cs" />
+    <Compile Include="MaskGenGraph\MaskDAGGraph\MaskDAGGraphNode.cs" />
+    <Compile Include="MaskGenGraph\MaskDAGGraph\MaskDAGParams.cs" />
+    <Compile Include="MaskGenGraph\MaskDAGGraph\OutputGenerationParams.cs" />
+    <Compile Include="MaskGenGraph\MaskGenForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MaskGenGraph\MaskGenForm.Designer.cs">
+      <DependentUpon>MaskGenForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParamType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MaskGenGraph\MaskDAGGraph\Devices\Device_Modifiers\Device_CurvesDlg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Device_CurvesDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaskGenGraph\MaskDAGGraph\Devices\Device_Output\Device_FileOutputDlg.resx">
+      <DependentUpon>Device_FileOutputDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaskGenGraph\MaskDAGGraph\Devices\Device_PropertyDlg.resx">
+      <DependentUpon>Device_PropertyDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaskGenGraph\MaskDAGGraph\Devices\Devic_Input\Device_MaskFromListDlg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Device_MaskFromListDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaskGenGraph\MaskGenForm.resx">
+      <DependentUpon>MaskGenForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MaskGenGraph_TODO.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EditorCore\EditorCore.csproj">
+      <Project>{D93EDAAC-3545-4224-A9EF-9A7426EE9E39}</Project>
+      <Name>EditorCore</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

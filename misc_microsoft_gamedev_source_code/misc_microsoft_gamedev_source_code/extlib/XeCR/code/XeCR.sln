@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XeCR", "XeCR.vcproj", "{2C659993-4FD2-44B3-B6A3-F4235B54A9F1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2582C64B-3119-4926-8A8F-BBD2104BFC9D} = {2582C64B-3119-4926-8A8F-BBD2104BFC9D}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XenonUtility", "XenonUtility.vcproj", "{2582C64B-3119-4926-8A8F-BBD2104BFC9D}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 3
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = XeCR.vcproj
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = XenonUtility.vcproj
+		SccLocalPath2 = .
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Xbox 360 = Debug|Xbox 360
+		Playtest|Xbox 360 = Playtest|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C659993-4FD2-44B3-B6A3-F4235B54A9F1}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{2C659993-4FD2-44B3-B6A3-F4235B54A9F1}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{2C659993-4FD2-44B3-B6A3-F4235B54A9F1}.Playtest|Xbox 360.ActiveCfg = Playtest|Xbox 360
+		{2C659993-4FD2-44B3-B6A3-F4235B54A9F1}.Playtest|Xbox 360.Build.0 = Playtest|Xbox 360
+		{2582C64B-3119-4926-8A8F-BBD2104BFC9D}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{2582C64B-3119-4926-8A8F-BBD2104BFC9D}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{2582C64B-3119-4926-8A8F-BBD2104BFC9D}.Playtest|Xbox 360.ActiveCfg = Playtest|Xbox 360
+		{2582C64B-3119-4926-8A8F-BBD2104BFC9D}.Playtest|Xbox 360.Build.0 = Playtest|Xbox 360
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

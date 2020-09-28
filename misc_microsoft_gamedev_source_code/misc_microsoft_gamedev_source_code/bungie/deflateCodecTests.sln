@@ -1,0 +1,74 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fileTest", "fileTest\fileTest.vcproj", "{3CD612A9-1B58-46CE-876A-DB6AD0EC4008}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1A78CCB8-6F86-40D5-8231-8D07F58AB4D8} = {1A78CCB8-6F86-40D5-8231-8D07F58AB4D8}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "deflateCodec", "deflateCodec\deflateCodec.vcproj", "{1A78CCB8-6F86-40D5-8231-8D07F58AB4D8}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "randTest", "randTest\randTest.vcproj", "{E84D2129-834A-4E10-9FEF-C571F3553A71}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1A78CCB8-6F86-40D5-8231-8D07F58AB4D8} = {1A78CCB8-6F86-40D5-8231-8D07F58AB4D8}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug Win32 = Debug Win32
+		Debug Xenon = Debug Xenon
+		Profile Xenon = Profile Xenon
+		Profile_FastCap Xenon = Profile_FastCap Xenon
+		Release Win32 = Release Win32
+		Release Xenon = Release Xenon
+		Release_LTCG Xenon = Release_LTCG Xenon
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{3CD612A9-1B58-46CE-876A-DB6AD0EC4008}.Debug Win32.ActiveCfg = Debug Win32|Win32
+		{3CD612A9-1B58-46CE-876A-DB6AD0EC4008}.Debug Win32.Build.0 = Debug Win32|Win32
+		{3CD612A9-1B58-46CE-876A-DB6AD0EC4008}.Debug Xenon.ActiveCfg = Debug Xenon|Xenon
+		{3CD612A9-1B58-46CE-876A-DB6AD0EC4008}.Debug Xenon.Build.0 = Debug Xenon|Xenon
+		{3CD612A9-1B58-46CE-876A-DB6AD0EC4008}.Profile Xenon.ActiveCfg = Profile Xenon|Xenon
+		{3CD612A9-1B58-46CE-876A-DB6AD0EC4008}.Profile Xenon.Build.0 = Profile Xenon|Xenon
+		{3CD612A9-1B58-46CE-876A-DB6AD0EC4008}.Profile_FastCap Xenon.ActiveCfg = Profile_FastCap Xenon|Xenon
+		{3CD612A9-1B58-46CE-876A-DB6AD0EC4008}.Profile_FastCap Xenon.Build.0 = Profile_FastCap Xenon|Xenon
+		{3CD612A9-1B58-46CE-876A-DB6AD0EC4008}.Release Win32.ActiveCfg = Release Win32|Win32
+		{3CD612A9-1B58-46CE-876A-DB6AD0EC4008}.Release Win32.Build.0 = Release Win32|Win32
+		{3CD612A9-1B58-46CE-876A-DB6AD0EC4008}.Release Xenon.ActiveCfg = Release Xenon|Xenon
+		{3CD612A9-1B58-46CE-876A-DB6AD0EC4008}.Release Xenon.Build.0 = Release Xenon|Xenon
+		{3CD612A9-1B58-46CE-876A-DB6AD0EC4008}.Release_LTCG Xenon.ActiveCfg = Release_LTCG Xenon|Xenon
+		{3CD612A9-1B58-46CE-876A-DB6AD0EC4008}.Release_LTCG Xenon.Build.0 = Release_LTCG Xenon|Xenon
+		{1A78CCB8-6F86-40D5-8231-8D07F58AB4D8}.Debug Win32.ActiveCfg = Debug Win32|Win32
+		{1A78CCB8-6F86-40D5-8231-8D07F58AB4D8}.Debug Win32.Build.0 = Debug Win32|Win32
+		{1A78CCB8-6F86-40D5-8231-8D07F58AB4D8}.Debug Xenon.ActiveCfg = Debug Xenon|Xenon
+		{1A78CCB8-6F86-40D5-8231-8D07F58AB4D8}.Debug Xenon.Build.0 = Debug Xenon|Xenon
+		{1A78CCB8-6F86-40D5-8231-8D07F58AB4D8}.Profile Xenon.ActiveCfg = Profile Xenon|Xenon
+		{1A78CCB8-6F86-40D5-8231-8D07F58AB4D8}.Profile Xenon.Build.0 = Profile Xenon|Xenon
+		{1A78CCB8-6F86-40D5-8231-8D07F58AB4D8}.Profile_FastCap Xenon.ActiveCfg = Profile_FastCap Xenon|Xenon
+		{1A78CCB8-6F86-40D5-8231-8D07F58AB4D8}.Profile_FastCap Xenon.Build.0 = Profile_FastCap Xenon|Xenon
+		{1A78CCB8-6F86-40D5-8231-8D07F58AB4D8}.Release Win32.ActiveCfg = Release Win32|Win32
+		{1A78CCB8-6F86-40D5-8231-8D07F58AB4D8}.Release Win32.Build.0 = Release Win32|Win32
+		{1A78CCB8-6F86-40D5-8231-8D07F58AB4D8}.Release Xenon.ActiveCfg = Release Xenon|Xenon
+		{1A78CCB8-6F86-40D5-8231-8D07F58AB4D8}.Release Xenon.Build.0 = Release Xenon|Xenon
+		{1A78CCB8-6F86-40D5-8231-8D07F58AB4D8}.Release_LTCG Xenon.ActiveCfg = Release_LTCG Xenon|Xenon
+		{1A78CCB8-6F86-40D5-8231-8D07F58AB4D8}.Release_LTCG Xenon.Build.0 = Release_LTCG Xenon|Xenon
+		{E84D2129-834A-4E10-9FEF-C571F3553A71}.Debug Win32.ActiveCfg = Debug Win32|Win32
+		{E84D2129-834A-4E10-9FEF-C571F3553A71}.Debug Win32.Build.0 = Debug Win32|Win32
+		{E84D2129-834A-4E10-9FEF-C571F3553A71}.Debug Xenon.ActiveCfg = Debug Xenon|Xenon
+		{E84D2129-834A-4E10-9FEF-C571F3553A71}.Debug Xenon.Build.0 = Debug Xenon|Xenon
+		{E84D2129-834A-4E10-9FEF-C571F3553A71}.Profile Xenon.ActiveCfg = Profile Xenon|Xenon
+		{E84D2129-834A-4E10-9FEF-C571F3553A71}.Profile Xenon.Build.0 = Profile Xenon|Xenon
+		{E84D2129-834A-4E10-9FEF-C571F3553A71}.Profile_FastCap Xenon.ActiveCfg = Profile_FastCap Xenon|Xenon
+		{E84D2129-834A-4E10-9FEF-C571F3553A71}.Profile_FastCap Xenon.Build.0 = Profile_FastCap Xenon|Xenon
+		{E84D2129-834A-4E10-9FEF-C571F3553A71}.Release Win32.ActiveCfg = Release Win32|Win32
+		{E84D2129-834A-4E10-9FEF-C571F3553A71}.Release Win32.Build.0 = Release Win32|Win32
+		{E84D2129-834A-4E10-9FEF-C571F3553A71}.Release Xenon.ActiveCfg = Release Xenon|Xenon
+		{E84D2129-834A-4E10-9FEF-C571F3553A71}.Release Xenon.Build.0 = Release Xenon|Xenon
+		{E84D2129-834A-4E10-9FEF-C571F3553A71}.Release_LTCG Xenon.ActiveCfg = Release_LTCG Xenon|Xenon
+		{E84D2129-834A-4E10-9FEF-C571F3553A71}.Release_LTCG Xenon.Build.0 = Release_LTCG Xenon|Xenon
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

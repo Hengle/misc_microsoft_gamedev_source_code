@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewRemoteTools", "NewRemoteTools\NewRemoteTools.csproj", "{8ADFF222-B8C3-4E63-82EA-3AD020A34C89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DXControls", "DXControls\DXControls.csproj", "{D05E877C-B613-4551-B56D-42524B77EC46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoteProfiler", "RemoteProfiler\RemoteProfiler.csproj", "{43342A22-CB4C-42E7-84C1-2FFEB561D8B8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D05E877C-B613-4551-B56D-42524B77EC46} = {D05E877C-B613-4551-B56D-42524B77EC46}
+		{42F3FFF8-DB15-49F9-8ED5-FB72B1E48DAF} = {42F3FFF8-DB15-49F9-8ED5-FB72B1E48DAF}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoteTools", "RemoteTools\RemoteTools.csproj", "{42F3FFF8-DB15-49F9-8ED5-FB72B1E48DAF}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 5
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = NewRemoteTools\\NewRemoteTools.csproj
+		SccLocalPath1 = NewRemoteTools
+		SccProjectUniqueName2 = DXControls\\DXControls.csproj
+		SccLocalPath2 = DXControls
+		SccProjectUniqueName3 = RemoteProfiler\\RemoteProfiler.csproj
+		SccLocalPath3 = RemoteProfiler
+		SccProjectUniqueName4 = RemoteTools\\RemoteTools.csproj
+		SccLocalPath4 = RemoteTools
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8ADFF222-B8C3-4E63-82EA-3AD020A34C89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ADFF222-B8C3-4E63-82EA-3AD020A34C89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ADFF222-B8C3-4E63-82EA-3AD020A34C89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ADFF222-B8C3-4E63-82EA-3AD020A34C89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D05E877C-B613-4551-B56D-42524B77EC46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D05E877C-B613-4551-B56D-42524B77EC46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D05E877C-B613-4551-B56D-42524B77EC46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D05E877C-B613-4551-B56D-42524B77EC46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43342A22-CB4C-42E7-84C1-2FFEB561D8B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43342A22-CB4C-42E7-84C1-2FFEB561D8B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43342A22-CB4C-42E7-84C1-2FFEB561D8B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43342A22-CB4C-42E7-84C1-2FFEB561D8B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42F3FFF8-DB15-49F9-8ED5-FB72B1E48DAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42F3FFF8-DB15-49F9-8ED5-FB72B1E48DAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42F3FFF8-DB15-49F9-8ED5-FB72B1E48DAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42F3FFF8-DB15-49F9-8ED5-FB72B1E48DAF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

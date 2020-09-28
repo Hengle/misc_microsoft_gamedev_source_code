@@ -1,0 +1,302 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{40CDF55D-66BC-4D06-AE56-94554E422F74}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ParticleSystem</RootNamespace>
+    <AssemblyName>ParticleSystem</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.DirectX, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.DirectX.Direct3D, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.DirectX.Direct3DX, Version=1.0.2909.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="ModelSystem, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ModelSystem\bin\Debug\ModelSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Sim, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Sim\bin\Debug\Sim.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TabControlEX, Version=0.0.2286.28897, Culture=neutral, PublicKeyToken=1db242dc828e4b4e">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bin\TabControlEX.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Terrain, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\Terrain.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Chart, Version=4.0.100.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.Chart.Core, Version=4.0.100.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.Chart.DataManipulation, Version=4.0.100.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.Chart.Graphics2D, Version=4.0.100.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.Chart.GraphicsCore, Version=4.0.100.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.Chart.GraphicsGL, Version=4.0.100.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.Chart.Server, Version=4.0.100.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.Chart.Standard, Version=4.0.100.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.Chart.UIControls, Version=4.0.100.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.Chart.Utilities, Version=4.0.100.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.Compression, Version=2.3.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.Compression.Formats, Version=1.0.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.DockingWindows, Version=1.0.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.DockingWindows.Design, Version=1.0.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.DockingWindows.Layout, Version=1.0.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.Editors, Version=2.0.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.Editors.Design, Version=2.0.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.FileSystem, Version=2.3.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.Ftp, Version=2.1.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.Grid, Version=3.0.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.Grid.Design, Version=3.0.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.Grid.Reporting, Version=3.0.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.Interop.SHDocVw, Version=1.1.0.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.Pdf, Version=1.0.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.SmartUI, Version=3.3.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.SmartUI.Controls, Version=3.3.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.SmartUI.Design, Version=3.3.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.SmartUI.UIStyle, Version=3.3.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.SmartUI.UIStyle.WindowsXP.Blue, Version=3.3.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.SmartUI.UIStyle.WindowsXP.OliveGreen, Version=3.3.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.SmartUI.UIStyle.WindowsXP.Silver, Version=3.3.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.UI, Version=1.0.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.UI.WindowsXP.Blue, Version=1.0.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.UI.WindowsXP.OliveGreen, Version=1.0.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.UI.WindowsXP.Silver, Version=1.0.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.Validation, Version=1.0.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.Validation.Design, Version=1.0.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.Zip, Version=2.3.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\AngleControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\AngleControl.Designer.cs">
+      <DependentUpon>AngleControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NameEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\NameEdit.Designer.cs">
+      <DependentUpon>NameEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TextureListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TextureListView.Designer.cs">
+      <DependentUpon>TextureListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\ColorPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\ColorPage.Designer.cs">
+      <DependentUpon>ColorPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\EmitterPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\EmitterPage.Designer.cs">
+      <DependentUpon>EmitterPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\EmitterShapePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\EmitterShapePage.Designer.cs">
+      <DependentUpon>EmitterShapePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParticleEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParticleEditor.Designer.cs">
+      <DependentUpon>ParticleEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParticleEffectData.cs">
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TextureControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TextureControl.Designer.cs">
+      <DependentUpon>TextureControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\IntesityPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\IntesityPage.Designer.cs">
+      <DependentUpon>IntesityPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\MagnetPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\MagnetPage.Designer.cs">
+      <DependentUpon>MagnetPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\OpacityPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\OpacityPage.Designer.cs">
+      <DependentUpon>OpacityPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\ScalePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\ScalePage.Designer.cs">
+      <DependentUpon>ScalePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\SpeedPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\SpeedPage.Designer.cs">
+      <DependentUpon>SpeedPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\SplashPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\SplashPage.Designer.cs">
+      <DependentUpon>SplashPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\TexturesPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\TexturesPage.Designer.cs">
+      <DependentUpon>TexturesPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UVControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UVControl.Designer.cs">
+      <DependentUpon>UVControl.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\AngleControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AngleControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NameEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NameEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TextureListView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TextureListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\ColorPage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColorPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\EmitterPage.resx">
+      <DependentUpon>EmitterPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\EmitterShapePage.resx">
+      <DependentUpon>EmitterShapePage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParticleEditor.resx">
+      <DependentUpon>ParticleEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TextureControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TextureControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\IntesityPage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>IntesityPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\MagnetPage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MagnetPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\OpacityPage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpacityPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\ScalePage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ScalePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\SpeedPage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpeedPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\SplashPage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SplashPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\TexturesPage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TexturesPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UVControl.resx">
+      <DependentUpon>UVControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EditorCore\EditorCore.csproj">
+      <Project>{D93EDAAC-3545-4224-A9EF-9A7426EE9E39}</Project>
+      <Name>EditorCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Renderer\Renderer.csproj">
+      <Project>{16DF09C9-E688-44DC-94A6-0390289021D8}</Project>
+      <Name>Renderer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VisualEditor\VisualEditor.csproj">
+      <Project>{E8F38A85-47A1-442E-8D51-BD86DF03D042}</Project>
+      <Name>VisualEditor</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

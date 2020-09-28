@@ -1,0 +1,38 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KorPlaceholder1", "KorPlaceholder1.vcproj", "{8AEFEBC2-13B9-4B3B-854B-53A1A147F943}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3DEE1F9A-DCE7-4C6D-9D85-43B8690CDC15} = {3DEE1F9A-DCE7-4C6D-9D85-43B8690CDC15}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FormatString", "..\FormatString\FormatString.vcproj", "{3DEE1F9A-DCE7-4C6D-9D85-43B8690CDC15}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Win32 = Release|Win32
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8AEFEBC2-13B9-4B3B-854B-53A1A147F943}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8AEFEBC2-13B9-4B3B-854B-53A1A147F943}.Debug|Win32.Build.0 = Debug|Win32
+		{8AEFEBC2-13B9-4B3B-854B-53A1A147F943}.Debug|Xbox 360.ActiveCfg = Debug|Win32
+		{8AEFEBC2-13B9-4B3B-854B-53A1A147F943}.Debug|Xbox 360.Build.0 = Debug|Win32
+		{8AEFEBC2-13B9-4B3B-854B-53A1A147F943}.Release|Win32.ActiveCfg = Release|Win32
+		{8AEFEBC2-13B9-4B3B-854B-53A1A147F943}.Release|Win32.Build.0 = Release|Win32
+		{8AEFEBC2-13B9-4B3B-854B-53A1A147F943}.Release|Xbox 360.ActiveCfg = Release|Win32
+		{8AEFEBC2-13B9-4B3B-854B-53A1A147F943}.Release|Xbox 360.Build.0 = Release|Win32
+		{3DEE1F9A-DCE7-4C6D-9D85-43B8690CDC15}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3DEE1F9A-DCE7-4C6D-9D85-43B8690CDC15}.Debug|Win32.Build.0 = Debug|Win32
+		{3DEE1F9A-DCE7-4C6D-9D85-43B8690CDC15}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{3DEE1F9A-DCE7-4C6D-9D85-43B8690CDC15}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{3DEE1F9A-DCE7-4C6D-9D85-43B8690CDC15}.Release|Win32.ActiveCfg = Release|Win32
+		{3DEE1F9A-DCE7-4C6D-9D85-43B8690CDC15}.Release|Win32.Build.0 = Release|Win32
+		{3DEE1F9A-DCE7-4C6D-9D85-43B8690CDC15}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{3DEE1F9A-DCE7-4C6D-9D85-43B8690CDC15}.Release|Xbox 360.Build.0 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,530 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E8F38A85-47A1-442E-8D51-BD86DF03D042}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VisualEditor</RootNamespace>
+    <AssemblyName>VisualEditor</AssemblyName>
+    <SccProjectName>Perforce Project</SccProjectName>
+    <SccLocalPath>..</SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>MSSCCI:Perforce SCM</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.DirectX, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.DirectX.Direct3D, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\Microsoft.DirectX.Direct3D.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.Direct3DX, Version=1.0.2911.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.DirectX.DirectInput, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\Microsoft.DirectX.DirectInput.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Xceed.DockingWindows, Version=1.0.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+    <Reference Include="Xceed.DockingWindows.Design, Version=1.0.6061.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\FloatSliderEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\FloatSliderEdit.Designer.cs">
+      <DependentUpon>FloatSliderEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SoundBrowseControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SoundBrowseControl.Designer.cs">
+      <DependentUpon>SoundBrowseControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\OpacityProgressionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\OpacityProgressionDialog.Designer.cs">
+      <DependentUpon>OpacityProgressionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\OpenSoundDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\OpenSoundDialog.Designer.cs">
+      <DependentUpon>OpenSoundDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\AnimAssetPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\AnimAssetPage.Designer.cs">
+      <DependentUpon>AnimAssetPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\AnimPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\AnimPage.Designer.cs">
+      <DependentUpon>AnimPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\AnimTagAttachTargetPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\AnimTagAttachTargetPage.designer.cs">
+      <DependentUpon>AnimTagAttachTargetPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\AnimTagAttackPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\AnimTagAttackPage.Designer.cs">
+      <DependentUpon>AnimTagAttackPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\AnimTagCameraShakePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\AnimTagCameraShakePage.Designer.cs">
+      <DependentUpon>AnimTagCameraShakePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\AnimTagGroundIKPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\AnimTagGroundIKPage.designer.cs">
+      <DependentUpon>AnimTagGroundIKPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\AnimTagLightPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\AnimTagLightPage.Designer.cs">
+      <DependentUpon>AnimTagLightPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\AnimTagParticlePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\AnimTagParticlePage.Designer.cs">
+      <DependentUpon>AnimTagParticlePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\AnimTagSoundPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\AnimTagSoundPage.Designer.cs">
+      <DependentUpon>AnimTagSoundPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\AnimTagTerrainAlpha.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\AnimTagTerrainAlpha.Designer.cs">
+      <DependentUpon>AnimTagTerrainAlpha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\AnimTagTerrainEffectPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\AnimTagTerrainEffectPage.Designer.cs">
+      <DependentUpon>AnimTagTerrainEffectPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\AnimTagUVOffsetPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\AnimTagUVOffsetPage.Designer.cs">
+      <DependentUpon>AnimTagUVOffsetPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\AttachLightPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\AttachLightPage.Designer.cs">
+      <DependentUpon>AttachLightPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\AttachModelPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\AttachModelPage.Designer.cs">
+      <DependentUpon>AttachModelPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\AttachModelRefPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\AttachModelRefPage.Designer.cs">
+      <DependentUpon>AttachModelRefPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\AttachParticlePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\AttachParticlePage.Designer.cs">
+      <DependentUpon>AttachParticlePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\AttachTerrainEffectPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\AttachTerrainEffectPage.Designer.cs">
+      <DependentUpon>AttachTerrainEffectPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\ComponentAssetLightPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\ComponentAssetLightPage.Designer.cs">
+      <DependentUpon>ComponentAssetLightPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\ComponentAssetModelPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\ComponentAssetModelPage.Designer.cs">
+      <DependentUpon>ComponentAssetModelPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\ComponentAssetParticlePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\ComponentAssetParticlePage.Designer.cs">
+      <DependentUpon>ComponentAssetParticlePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\AnimTagSweetSpotPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\AnimTagSweetSpotPage.designer.cs">
+      <DependentUpon>AnimTagSweetSpotPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\AnimTagRumblePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\AnimTagRumblePage.Designer.cs">
+      <DependentUpon>AnimTagRumblePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\AnimTagBuildingDecalPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\AnimTagBuildingDecalPage.Designer.cs">
+      <DependentUpon>AnimTagBuildingDecalPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\AnimTagKillAndThrowPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\AnimTagKillAndThrowPage.designer.cs">
+      <DependentUpon>AnimTagKillAndThrowPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\AnimTagPhysicsImpulsePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\AnimTagPhysicsImpulsePage.Designer.cs">
+      <DependentUpon>AnimTagPhysicsImpulsePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\LogicNodeUserCivPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\LogicNodeUserCivPage.Designer.cs">
+      <DependentUpon>LogicNodeUserCivPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\GenericPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\GenericPage.Designer.cs">
+      <DependentUpon>GenericPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\LogicNodeBuildingCompletionPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\LogicNodeBuildingCompletionPage.Designer.cs">
+      <DependentUpon>LogicNodeBuildingCompletionPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\LogicNodeDestructionPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\LogicNodeDestructionPage.Designer.cs">
+      <DependentUpon>LogicNodeDestructionPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\LogicNodeImpactSizePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\LogicNodeImpactSizePage.Designer.cs">
+      <DependentUpon>LogicNodeImpactSizePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\LogicNodeSquadModePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\LogicNodeSquadModePage.Designer.cs">
+      <DependentUpon>LogicNodeSquadModePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\LogicNodeTechPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\LogicNodeTechPage.Designer.cs">
+      <DependentUpon>LogicNodeTechPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\LogicNodeVariationPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\LogicNodeVariationPage.Designer.cs">
+      <DependentUpon>LogicNodeVariationPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\LogicPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\LogicPage.Designer.cs">
+      <DependentUpon>LogicPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\ModelPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\ModelPage.Designer.cs">
+      <DependentUpon>ModelPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\PointPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\PointPage.Designer.cs">
+      <DependentUpon>PointPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\VisualPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\VisualPage.Designer.cs">
+      <DependentUpon>VisualPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UndoRedoAction.cs" />
+    <Compile Include="VisualEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VisualEditor.Designer.cs">
+      <DependentUpon>VisualEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EditorCore\EditorCore.csproj">
+      <Project>{D93EDAAC-3545-4224-A9EF-9A7426EE9E39}</Project>
+      <Name>EditorCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ModelSystem\ModelSystem.csproj">
+      <Project>{4DDEF9AB-DF2F-42CD-9D2B-BEE1824E8119}</Project>
+      <Name>ModelSystem</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Renderer\Renderer.csproj">
+      <Project>{16DF09C9-E688-44DC-94A6-0390289021D8}</Project>
+      <Name>Renderer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sim\Sim.csproj">
+      <Project>{F0F5933B-2FC5-40F5-9B9C-3DC332A954AD}</Project>
+      <Name>Sim</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Terrain\Terrain.csproj">
+      <Project>{DB92A7C0-AD20-4B8F-87A1-4F891EF697A5}</Project>
+      <Name>Terrain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\FloatSliderEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FloatSliderEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SoundBrowseControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SoundBrowseControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\OpacityProgressionDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpacityProgressionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\OpenSoundDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpenSoundDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\AnimAssetPage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AnimAssetPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\AnimPage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AnimPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\AnimTagAttachTargetPage.resx">
+      <DependentUpon>AnimTagAttachTargetPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\AnimTagAttackPage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AnimTagAttackPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\AnimTagCameraShakePage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AnimTagCameraShakePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\AnimTagGroundIKPage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AnimTagGroundIKPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\AnimTagLightPage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AnimTagLightPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\AnimTagParticlePage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AnimTagParticlePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\AnimTagSoundPage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AnimTagSoundPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\AnimTagTerrainAlpha.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AnimTagTerrainAlpha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\AnimTagTerrainEffectPage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AnimTagTerrainEffectPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\AnimTagUVOffsetPage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AnimTagUVOffsetPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\AttachLightPage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AttachLightPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\AttachModelPage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AttachModelPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\AttachModelRefPage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AttachModelRefPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\AttachParticlePage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AttachParticlePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\AttachTerrainEffectPage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AttachTerrainEffectPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\ComponentAssetLightPage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ComponentAssetLightPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\ComponentAssetModelPage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ComponentAssetModelPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\ComponentAssetParticlePage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ComponentAssetParticlePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\AnimTagSweetSpotPage.resx">
+      <DependentUpon>AnimTagSweetSpotPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\AnimTagRumblePage.resx">
+      <DependentUpon>AnimTagRumblePage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\AnimTagBuildingDecalPage.resx">
+      <DependentUpon>AnimTagBuildingDecalPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\AnimTagKillAndThrowPage.resx">
+      <DependentUpon>AnimTagKillAndThrowPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\AnimTagPhysicsImpulsePage.resx">
+      <DependentUpon>AnimTagPhysicsImpulsePage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\LogicNodeUserCivPage.resx">
+      <DependentUpon>LogicNodeUserCivPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\GenericPage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GenericPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\LogicNodeBuildingCompletionPage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LogicNodeBuildingCompletionPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\LogicNodeDestructionPage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LogicNodeDestructionPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\LogicNodeImpactSizePage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LogicNodeImpactSizePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\LogicNodeSquadModePage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LogicNodeSquadModePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\LogicNodeTechPage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LogicNodeTechPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\LogicNodeVariationPage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LogicNodeVariationPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\LogicPage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LogicPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\ModelPage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ModelPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\PointPage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PointPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\VisualPage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>VisualPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisualEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>VisualEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

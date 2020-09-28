@@ -1,0 +1,35 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ugfout", "..\..\projects\ugfout\ugfout.vcproj", "{63B20CB0-507D-4E95-BB9F-26A440183F37}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1043F58C-D50C-4F67-AE61-D4C205AC2C9C} = {1043F58C-D50C-4F67-AE61-D4C205AC2C9C}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "shared_maxplugin", "..\..\projects\shared_maxplugin\shared_plugin.vcproj", "{1043F58C-D50C-4F67-AE61-D4C205AC2C9C}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Hybrid = Hybrid
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{63B20CB0-507D-4E95-BB9F-26A440183F37}.Debug.ActiveCfg = Debug|Win32
+		{63B20CB0-507D-4E95-BB9F-26A440183F37}.Debug.Build.0 = Debug|Win32
+		{63B20CB0-507D-4E95-BB9F-26A440183F37}.Hybrid.ActiveCfg = Hybrid|Win32
+		{63B20CB0-507D-4E95-BB9F-26A440183F37}.Hybrid.Build.0 = Hybrid|Win32
+		{63B20CB0-507D-4E95-BB9F-26A440183F37}.Release.ActiveCfg = Release|Win32
+		{63B20CB0-507D-4E95-BB9F-26A440183F37}.Release.Build.0 = Release|Win32
+		{1043F58C-D50C-4F67-AE61-D4C205AC2C9C}.Debug.ActiveCfg = Debug|Win32
+		{1043F58C-D50C-4F67-AE61-D4C205AC2C9C}.Debug.Build.0 = Debug|Win32
+		{1043F58C-D50C-4F67-AE61-D4C205AC2C9C}.Hybrid.ActiveCfg = Hybrid|Win32
+		{1043F58C-D50C-4F67-AE61-D4C205AC2C9C}.Hybrid.Build.0 = Hybrid|Win32
+		{1043F58C-D50C-4F67-AE61-D4C205AC2C9C}.Release.ActiveCfg = Release|Win32
+		{1043F58C-D50C-4F67-AE61-D4C205AC2C9C}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

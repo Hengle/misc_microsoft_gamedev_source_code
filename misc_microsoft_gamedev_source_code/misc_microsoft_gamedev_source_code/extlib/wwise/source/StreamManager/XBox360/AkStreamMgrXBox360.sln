@@ -1,0 +1,31 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AkStreamMgr", "AkStreamMgr.vcproj", "{7158CEF1-4D9C-4405-87DF-FF770D9B96F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug XBox360|Xbox 360 = Debug XBox360|Xbox 360
+		Debug|Xbox 360 = Debug|Xbox 360
+		Profile XBox360|Xbox 360 = Profile XBox360|Xbox 360
+		Profile|Xbox 360 = Profile|Xbox 360
+		Release XBox360|Xbox 360 = Release XBox360|Xbox 360
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7158CEF1-4D9C-4405-87DF-FF770D9B96F3}.Debug XBox360|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{7158CEF1-4D9C-4405-87DF-FF770D9B96F3}.Debug XBox360|Xbox 360.Build.0 = Debug|Xbox 360
+		{7158CEF1-4D9C-4405-87DF-FF770D9B96F3}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{7158CEF1-4D9C-4405-87DF-FF770D9B96F3}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{7158CEF1-4D9C-4405-87DF-FF770D9B96F3}.Profile XBox360|Xbox 360.ActiveCfg = Profile|Xbox 360
+		{7158CEF1-4D9C-4405-87DF-FF770D9B96F3}.Profile XBox360|Xbox 360.Build.0 = Profile|Xbox 360
+		{7158CEF1-4D9C-4405-87DF-FF770D9B96F3}.Profile|Xbox 360.ActiveCfg = Profile|Xbox 360
+		{7158CEF1-4D9C-4405-87DF-FF770D9B96F3}.Profile|Xbox 360.Build.0 = Profile|Xbox 360
+		{7158CEF1-4D9C-4405-87DF-FF770D9B96F3}.Release XBox360|Xbox 360.ActiveCfg = Release|Xbox 360
+		{7158CEF1-4D9C-4405-87DF-FF770D9B96F3}.Release XBox360|Xbox 360.Build.0 = Release|Xbox 360
+		{7158CEF1-4D9C-4405-87DF-FF770D9B96F3}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{7158CEF1-4D9C-4405-87DF-FF770D9B96F3}.Release|Xbox 360.Build.0 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

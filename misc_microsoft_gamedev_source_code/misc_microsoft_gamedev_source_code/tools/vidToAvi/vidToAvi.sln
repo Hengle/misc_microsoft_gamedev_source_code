@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vidToAvi", "vidToAvi.vcproj", "{28524155-1610-4D12-B8AF-2FFF27A31BBA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1E6CB453-DFFD-4E64-B95F-63641B7D8971} = {1E6CB453-DFFD-4E64-B95F-63641B7D8971}
+		{FC19316B-CBC6-4396-8B57-7651E617A369} = {FC19316B-CBC6-4396-8B57-7651E617A369}
+		{D35114E9-75CE-4DCA-8667-55FFE8887306} = {D35114E9-75CE-4DCA-8667-55FFE8887306}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xcore", "..\..\xcore\xcore.vcproj", "{FC19316B-CBC6-4396-8B57-7651E617A369}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "compression", "..\..\compression\compression.vcproj", "{1E6CB453-DFFD-4E64-B95F-63641B7D8971}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ximage", "..\..\ximage\ximage.vcproj", "{D35114E9-75CE-4DCA-8667-55FFE8887306}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|Xbox 360 = Debug|Xbox 360
+		Final|Win32 = Final|Win32
+		Final|Xbox 360 = Final|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28524155-1610-4D12-B8AF-2FFF27A31BBA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{28524155-1610-4D12-B8AF-2FFF27A31BBA}.Debug|Win32.Build.0 = Debug|Win32
+		{28524155-1610-4D12-B8AF-2FFF27A31BBA}.Debug|Xbox 360.ActiveCfg = Debug|Win32
+		{28524155-1610-4D12-B8AF-2FFF27A31BBA}.Final|Win32.ActiveCfg = Final|Win32
+		{28524155-1610-4D12-B8AF-2FFF27A31BBA}.Final|Win32.Build.0 = Final|Win32
+		{28524155-1610-4D12-B8AF-2FFF27A31BBA}.Final|Xbox 360.ActiveCfg = Final|Win32
+		{FC19316B-CBC6-4396-8B57-7651E617A369}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FC19316B-CBC6-4396-8B57-7651E617A369}.Debug|Win32.Build.0 = Debug|Win32
+		{FC19316B-CBC6-4396-8B57-7651E617A369}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{FC19316B-CBC6-4396-8B57-7651E617A369}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{FC19316B-CBC6-4396-8B57-7651E617A369}.Final|Win32.ActiveCfg = Final|Win32
+		{FC19316B-CBC6-4396-8B57-7651E617A369}.Final|Win32.Build.0 = Final|Win32
+		{FC19316B-CBC6-4396-8B57-7651E617A369}.Final|Xbox 360.ActiveCfg = Final|Xbox 360
+		{FC19316B-CBC6-4396-8B57-7651E617A369}.Final|Xbox 360.Build.0 = Final|Xbox 360
+		{1E6CB453-DFFD-4E64-B95F-63641B7D8971}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1E6CB453-DFFD-4E64-B95F-63641B7D8971}.Debug|Win32.Build.0 = Debug|Win32
+		{1E6CB453-DFFD-4E64-B95F-63641B7D8971}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{1E6CB453-DFFD-4E64-B95F-63641B7D8971}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{1E6CB453-DFFD-4E64-B95F-63641B7D8971}.Final|Win32.ActiveCfg = Final|Win32
+		{1E6CB453-DFFD-4E64-B95F-63641B7D8971}.Final|Win32.Build.0 = Final|Win32
+		{1E6CB453-DFFD-4E64-B95F-63641B7D8971}.Final|Xbox 360.ActiveCfg = Final|Xbox 360
+		{1E6CB453-DFFD-4E64-B95F-63641B7D8971}.Final|Xbox 360.Build.0 = Final|Xbox 360
+		{D35114E9-75CE-4DCA-8667-55FFE8887306}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D35114E9-75CE-4DCA-8667-55FFE8887306}.Debug|Win32.Build.0 = Debug|Win32
+		{D35114E9-75CE-4DCA-8667-55FFE8887306}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{D35114E9-75CE-4DCA-8667-55FFE8887306}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{D35114E9-75CE-4DCA-8667-55FFE8887306}.Final|Win32.ActiveCfg = Final|Win32
+		{D35114E9-75CE-4DCA-8667-55FFE8887306}.Final|Win32.Build.0 = Final|Win32
+		{D35114E9-75CE-4DCA-8667-55FFE8887306}.Final|Xbox 360.ActiveCfg = Final|Xbox 360
+		{D35114E9-75CE-4DCA-8667-55FFE8887306}.Final|Xbox 360.Build.0 = Final|Xbox 360
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,184 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Library", "..\Common\Library\Library-vc71.vcproj", "{BE327EF6-38DA-4E56-A8FB-5417A30BC226}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Heap", "Heap\Heap-vc71.vcproj", "{DAA49CDA-72D4-4B3A-B507-36819DB136D8}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Rockall", "Rockall\Rockall-vc71.vcproj", "{B58E2D24-6A65-4D57-B02D-C2CFA33A0439}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DAA49CDA-72D4-4B3A-B507-36819DB136D8} = {DAA49CDA-72D4-4B3A-B507-36819DB136D8}
+		{BE327EF6-38DA-4E56-A8FB-5417A30BC226} = {BE327EF6-38DA-4E56-A8FB-5417A30BC226}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tests", "Tests\Tests-vc71.vcproj", "{719CDEF2-B6CD-4FFB-A7CA-4AB15367DCE0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B58E2D24-6A65-4D57-B02D-C2CFA33A0439} = {B58E2D24-6A65-4D57-B02D-C2CFA33A0439}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Benchmark", "Benchmark\Benchmark-vc71.vcproj", "{DFA7644A-EACD-40A2-A854-76C8FEE93653}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B58E2D24-6A65-4D57-B02D-C2CFA33A0439} = {B58E2D24-6A65-4D57-B02D-C2CFA33A0439}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RockLog", "..\..\Tools\RockLog\RockLog-vc71.vcproj", "{D41816A1-A156-4998-AA34-8335A6CA1091}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HeapTune", "..\..\Tools\HeapTune\HeapTune-vc71.vcproj", "{5887F73A-F465-4668-9A68-35B68300C634}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MemMgr", "..\..\Tools\HeapMgr\MemMgr-vc71.vcproj", "{864E4B46-DFD3-49A4-8158-18E946D90436}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Debug Win32 = Debug Win32
+		Debug Xenon = Debug Xenon
+		Profile Win32 = Profile Win32
+		Profile Xenon = Profile Xenon
+		Release = Release
+		Release Win32 = Release Win32
+		Release Xenon = Release Xenon
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{BE327EF6-38DA-4E56-A8FB-5417A30BC226}.Debug.ActiveCfg = Debug|Win32
+		{BE327EF6-38DA-4E56-A8FB-5417A30BC226}.Debug.Build.0 = Debug|Win32
+		{BE327EF6-38DA-4E56-A8FB-5417A30BC226}.Debug Win32.ActiveCfg = Debug|Win32
+		{BE327EF6-38DA-4E56-A8FB-5417A30BC226}.Debug Win32.Build.0 = Debug|Win32
+		{BE327EF6-38DA-4E56-A8FB-5417A30BC226}.Debug Xenon.ActiveCfg = Debug|Xenon
+		{BE327EF6-38DA-4E56-A8FB-5417A30BC226}.Debug Xenon.Build.0 = Debug|Xenon
+		{BE327EF6-38DA-4E56-A8FB-5417A30BC226}.Profile Win32.ActiveCfg = Profile|Win32
+		{BE327EF6-38DA-4E56-A8FB-5417A30BC226}.Profile Win32.Build.0 = Profile|Win32
+		{BE327EF6-38DA-4E56-A8FB-5417A30BC226}.Profile Xenon.ActiveCfg = Profile|Xenon
+		{BE327EF6-38DA-4E56-A8FB-5417A30BC226}.Profile Xenon.Build.0 = Profile|Xenon
+		{BE327EF6-38DA-4E56-A8FB-5417A30BC226}.Release.ActiveCfg = Release|Win32
+		{BE327EF6-38DA-4E56-A8FB-5417A30BC226}.Release.Build.0 = Release|Win32
+		{BE327EF6-38DA-4E56-A8FB-5417A30BC226}.Release Win32.ActiveCfg = Release|Win32
+		{BE327EF6-38DA-4E56-A8FB-5417A30BC226}.Release Win32.Build.0 = Release|Win32
+		{BE327EF6-38DA-4E56-A8FB-5417A30BC226}.Release Xenon.ActiveCfg = Release|Xenon
+		{BE327EF6-38DA-4E56-A8FB-5417A30BC226}.Release Xenon.Build.0 = Release|Xenon
+		{DAA49CDA-72D4-4B3A-B507-36819DB136D8}.Debug.ActiveCfg = Debug|Win32
+		{DAA49CDA-72D4-4B3A-B507-36819DB136D8}.Debug.Build.0 = Debug|Win32
+		{DAA49CDA-72D4-4B3A-B507-36819DB136D8}.Debug Win32.ActiveCfg = Debug|Win32
+		{DAA49CDA-72D4-4B3A-B507-36819DB136D8}.Debug Win32.Build.0 = Debug|Win32
+		{DAA49CDA-72D4-4B3A-B507-36819DB136D8}.Debug Xenon.ActiveCfg = Debug|Xenon
+		{DAA49CDA-72D4-4B3A-B507-36819DB136D8}.Debug Xenon.Build.0 = Debug|Xenon
+		{DAA49CDA-72D4-4B3A-B507-36819DB136D8}.Profile Win32.ActiveCfg = Profile|Win32
+		{DAA49CDA-72D4-4B3A-B507-36819DB136D8}.Profile Win32.Build.0 = Profile|Win32
+		{DAA49CDA-72D4-4B3A-B507-36819DB136D8}.Profile Xenon.ActiveCfg = Profile|Xenon
+		{DAA49CDA-72D4-4B3A-B507-36819DB136D8}.Profile Xenon.Build.0 = Profile|Xenon
+		{DAA49CDA-72D4-4B3A-B507-36819DB136D8}.Release.ActiveCfg = Release|Win32
+		{DAA49CDA-72D4-4B3A-B507-36819DB136D8}.Release.Build.0 = Release|Win32
+		{DAA49CDA-72D4-4B3A-B507-36819DB136D8}.Release Win32.ActiveCfg = Release|Win32
+		{DAA49CDA-72D4-4B3A-B507-36819DB136D8}.Release Win32.Build.0 = Release|Win32
+		{DAA49CDA-72D4-4B3A-B507-36819DB136D8}.Release Xenon.ActiveCfg = Release|Xenon
+		{DAA49CDA-72D4-4B3A-B507-36819DB136D8}.Release Xenon.Build.0 = Release|Xenon
+		{B58E2D24-6A65-4D57-B02D-C2CFA33A0439}.Debug.ActiveCfg = Debug|Win32
+		{B58E2D24-6A65-4D57-B02D-C2CFA33A0439}.Debug.Build.0 = Debug|Win32
+		{B58E2D24-6A65-4D57-B02D-C2CFA33A0439}.Debug Win32.ActiveCfg = Debug|Win32
+		{B58E2D24-6A65-4D57-B02D-C2CFA33A0439}.Debug Win32.Build.0 = Debug|Win32
+		{B58E2D24-6A65-4D57-B02D-C2CFA33A0439}.Debug Xenon.ActiveCfg = Debug|Xenon
+		{B58E2D24-6A65-4D57-B02D-C2CFA33A0439}.Debug Xenon.Build.0 = Debug|Xenon
+		{B58E2D24-6A65-4D57-B02D-C2CFA33A0439}.Profile Win32.ActiveCfg = Profile|Win32
+		{B58E2D24-6A65-4D57-B02D-C2CFA33A0439}.Profile Win32.Build.0 = Profile|Win32
+		{B58E2D24-6A65-4D57-B02D-C2CFA33A0439}.Profile Xenon.ActiveCfg = Profile|Xenon
+		{B58E2D24-6A65-4D57-B02D-C2CFA33A0439}.Profile Xenon.Build.0 = Profile|Xenon
+		{B58E2D24-6A65-4D57-B02D-C2CFA33A0439}.Release.ActiveCfg = Release|Win32
+		{B58E2D24-6A65-4D57-B02D-C2CFA33A0439}.Release.Build.0 = Release|Win32
+		{B58E2D24-6A65-4D57-B02D-C2CFA33A0439}.Release Win32.ActiveCfg = Release|Win32
+		{B58E2D24-6A65-4D57-B02D-C2CFA33A0439}.Release Win32.Build.0 = Release|Win32
+		{B58E2D24-6A65-4D57-B02D-C2CFA33A0439}.Release Xenon.ActiveCfg = Release|Xenon
+		{B58E2D24-6A65-4D57-B02D-C2CFA33A0439}.Release Xenon.Build.0 = Release|Xenon
+		{719CDEF2-B6CD-4FFB-A7CA-4AB15367DCE0}.Debug.ActiveCfg = Debug|Win32
+		{719CDEF2-B6CD-4FFB-A7CA-4AB15367DCE0}.Debug.Build.0 = Debug|Win32
+		{719CDEF2-B6CD-4FFB-A7CA-4AB15367DCE0}.Debug Win32.ActiveCfg = Debug|Win32
+		{719CDEF2-B6CD-4FFB-A7CA-4AB15367DCE0}.Debug Win32.Build.0 = Debug|Win32
+		{719CDEF2-B6CD-4FFB-A7CA-4AB15367DCE0}.Debug Xenon.ActiveCfg = Debug|Xenon
+		{719CDEF2-B6CD-4FFB-A7CA-4AB15367DCE0}.Debug Xenon.Build.0 = Debug|Xenon
+		{719CDEF2-B6CD-4FFB-A7CA-4AB15367DCE0}.Profile Win32.ActiveCfg = Profile|Win32
+		{719CDEF2-B6CD-4FFB-A7CA-4AB15367DCE0}.Profile Win32.Build.0 = Profile|Win32
+		{719CDEF2-B6CD-4FFB-A7CA-4AB15367DCE0}.Profile Xenon.ActiveCfg = Profile|Xenon
+		{719CDEF2-B6CD-4FFB-A7CA-4AB15367DCE0}.Profile Xenon.Build.0 = Profile|Xenon
+		{719CDEF2-B6CD-4FFB-A7CA-4AB15367DCE0}.Release.ActiveCfg = Release|Win32
+		{719CDEF2-B6CD-4FFB-A7CA-4AB15367DCE0}.Release.Build.0 = Release|Win32
+		{719CDEF2-B6CD-4FFB-A7CA-4AB15367DCE0}.Release Win32.ActiveCfg = Release|Win32
+		{719CDEF2-B6CD-4FFB-A7CA-4AB15367DCE0}.Release Win32.Build.0 = Release|Win32
+		{719CDEF2-B6CD-4FFB-A7CA-4AB15367DCE0}.Release Xenon.ActiveCfg = Release|Xenon
+		{719CDEF2-B6CD-4FFB-A7CA-4AB15367DCE0}.Release Xenon.Build.0 = Release|Xenon
+		{DFA7644A-EACD-40A2-A854-76C8FEE93653}.Debug.ActiveCfg = Debug|Win32
+		{DFA7644A-EACD-40A2-A854-76C8FEE93653}.Debug.Build.0 = Debug|Win32
+		{DFA7644A-EACD-40A2-A854-76C8FEE93653}.Debug Win32.ActiveCfg = Debug|Win32
+		{DFA7644A-EACD-40A2-A854-76C8FEE93653}.Debug Win32.Build.0 = Debug|Win32
+		{DFA7644A-EACD-40A2-A854-76C8FEE93653}.Debug Xenon.ActiveCfg = Debug|Xenon
+		{DFA7644A-EACD-40A2-A854-76C8FEE93653}.Debug Xenon.Build.0 = Debug|Xenon
+		{DFA7644A-EACD-40A2-A854-76C8FEE93653}.Profile Win32.ActiveCfg = Profile|Win32
+		{DFA7644A-EACD-40A2-A854-76C8FEE93653}.Profile Win32.Build.0 = Profile|Win32
+		{DFA7644A-EACD-40A2-A854-76C8FEE93653}.Profile Xenon.ActiveCfg = Profile|Xenon
+		{DFA7644A-EACD-40A2-A854-76C8FEE93653}.Profile Xenon.Build.0 = Profile|Xenon
+		{DFA7644A-EACD-40A2-A854-76C8FEE93653}.Release.ActiveCfg = Release|Win32
+		{DFA7644A-EACD-40A2-A854-76C8FEE93653}.Release.Build.0 = Release|Win32
+		{DFA7644A-EACD-40A2-A854-76C8FEE93653}.Release Win32.ActiveCfg = Release|Win32
+		{DFA7644A-EACD-40A2-A854-76C8FEE93653}.Release Win32.Build.0 = Release|Win32
+		{DFA7644A-EACD-40A2-A854-76C8FEE93653}.Release Xenon.ActiveCfg = Release|Xenon
+		{DFA7644A-EACD-40A2-A854-76C8FEE93653}.Release Xenon.Build.0 = Release|Xenon
+		{D41816A1-A156-4998-AA34-8335A6CA1091}.Debug.ActiveCfg = Debug|Win32
+		{D41816A1-A156-4998-AA34-8335A6CA1091}.Debug.Build.0 = Debug|Win32
+		{D41816A1-A156-4998-AA34-8335A6CA1091}.Debug Win32.ActiveCfg = Debug|Win32
+		{D41816A1-A156-4998-AA34-8335A6CA1091}.Debug Win32.Build.0 = Debug|Win32
+		{D41816A1-A156-4998-AA34-8335A6CA1091}.Debug Xenon.ActiveCfg = Debug|Win32
+		{D41816A1-A156-4998-AA34-8335A6CA1091}.Debug Xenon.Build.0 = Debug|Win32
+		{D41816A1-A156-4998-AA34-8335A6CA1091}.Profile Win32.ActiveCfg = Release|Win32
+		{D41816A1-A156-4998-AA34-8335A6CA1091}.Profile Win32.Build.0 = Release|Win32
+		{D41816A1-A156-4998-AA34-8335A6CA1091}.Profile Xenon.ActiveCfg = Release|Win32
+		{D41816A1-A156-4998-AA34-8335A6CA1091}.Profile Xenon.Build.0 = Release|Win32
+		{D41816A1-A156-4998-AA34-8335A6CA1091}.Release.ActiveCfg = Release|Win32
+		{D41816A1-A156-4998-AA34-8335A6CA1091}.Release.Build.0 = Release|Win32
+		{D41816A1-A156-4998-AA34-8335A6CA1091}.Release Win32.ActiveCfg = Release|Win32
+		{D41816A1-A156-4998-AA34-8335A6CA1091}.Release Win32.Build.0 = Release|Win32
+		{D41816A1-A156-4998-AA34-8335A6CA1091}.Release Xenon.ActiveCfg = Release|Win32
+		{D41816A1-A156-4998-AA34-8335A6CA1091}.Release Xenon.Build.0 = Release|Win32
+		{5887F73A-F465-4668-9A68-35B68300C634}.Debug.ActiveCfg = Debug|Win32
+		{5887F73A-F465-4668-9A68-35B68300C634}.Debug.Build.0 = Debug|Win32
+		{5887F73A-F465-4668-9A68-35B68300C634}.Debug Win32.ActiveCfg = Debug|Win32
+		{5887F73A-F465-4668-9A68-35B68300C634}.Debug Win32.Build.0 = Debug|Win32
+		{5887F73A-F465-4668-9A68-35B68300C634}.Debug Xenon.ActiveCfg = Debug|Win32
+		{5887F73A-F465-4668-9A68-35B68300C634}.Debug Xenon.Build.0 = Debug|Win32
+		{5887F73A-F465-4668-9A68-35B68300C634}.Profile Win32.ActiveCfg = Release|Win32
+		{5887F73A-F465-4668-9A68-35B68300C634}.Profile Win32.Build.0 = Release|Win32
+		{5887F73A-F465-4668-9A68-35B68300C634}.Profile Xenon.ActiveCfg = Release|Win32
+		{5887F73A-F465-4668-9A68-35B68300C634}.Profile Xenon.Build.0 = Release|Win32
+		{5887F73A-F465-4668-9A68-35B68300C634}.Release.ActiveCfg = Release|Win32
+		{5887F73A-F465-4668-9A68-35B68300C634}.Release.Build.0 = Release|Win32
+		{5887F73A-F465-4668-9A68-35B68300C634}.Release Win32.ActiveCfg = Release|Win32
+		{5887F73A-F465-4668-9A68-35B68300C634}.Release Win32.Build.0 = Release|Win32
+		{5887F73A-F465-4668-9A68-35B68300C634}.Release Xenon.ActiveCfg = Release|Win32
+		{5887F73A-F465-4668-9A68-35B68300C634}.Release Xenon.Build.0 = Release|Win32
+		{864E4B46-DFD3-49A4-8158-18E946D90436}.Debug.ActiveCfg = Debug|Win32
+		{864E4B46-DFD3-49A4-8158-18E946D90436}.Debug.Build.0 = Debug|Win32
+		{864E4B46-DFD3-49A4-8158-18E946D90436}.Debug Win32.ActiveCfg = Debug|Win32
+		{864E4B46-DFD3-49A4-8158-18E946D90436}.Debug Win32.Build.0 = Debug|Win32
+		{864E4B46-DFD3-49A4-8158-18E946D90436}.Debug Xenon.ActiveCfg = Debug|Win32
+		{864E4B46-DFD3-49A4-8158-18E946D90436}.Debug Xenon.Build.0 = Debug|Win32
+		{864E4B46-DFD3-49A4-8158-18E946D90436}.Profile Win32.ActiveCfg = Release|Win32
+		{864E4B46-DFD3-49A4-8158-18E946D90436}.Profile Win32.Build.0 = Release|Win32
+		{864E4B46-DFD3-49A4-8158-18E946D90436}.Profile Xenon.ActiveCfg = Release|Win32
+		{864E4B46-DFD3-49A4-8158-18E946D90436}.Profile Xenon.Build.0 = Release|Win32
+		{864E4B46-DFD3-49A4-8158-18E946D90436}.Release.ActiveCfg = Release|Win32
+		{864E4B46-DFD3-49A4-8158-18E946D90436}.Release.Build.0 = Release|Win32
+		{864E4B46-DFD3-49A4-8158-18E946D90436}.Release Win32.ActiveCfg = Release|Win32
+		{864E4B46-DFD3-49A4-8158-18E946D90436}.Release Win32.Build.0 = Release|Win32
+		{864E4B46-DFD3-49A4-8158-18E946D90436}.Release Xenon.ActiveCfg = Release|Win32
+		{864E4B46-DFD3-49A4-8158-18E946D90436}.Release Xenon.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
